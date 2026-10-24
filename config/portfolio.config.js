@@ -91,8 +91,8 @@ window.PORTFOLIO_CONFIG = {
     },
     {
       "label": "LinkedIn",
-      "value": "nhutnhd",
-      "href": "https://www.linkedin.com/in/nhutnhd/"
+      "value": "dangnhutnguyen",
+      "href": "https://www.linkedin.com/in/dangnhutnguyen/"
     },
     {
       "label": "ORCID",
@@ -214,7 +214,7 @@ window.PORTFOLIO_CONFIG = {
           "status": "Completed · Peer Verified",
           "abstract": "Coupling geometric optics, thermodynamics, and real-time dual-axis solar tracking algorithms using multidirectional photo-sensor arrays.",
           "explanation": "Applying differential calculus to optimize parabolic dual-curvature reflector tilt relative to apparent solar coordinates. Dual-axis tracking yielded a 38.4% thermal flux density gain over fixed collectors.",
-          "paperUrl": "https://bit.ly/SolarProject-nhutnhd",
+          "paperUrl": "https://bit.ly/SolarProject-dangnhutnguyen",
           "codeUrl": "https://github.com/nhutnhd",
           "demoUrl": "",
           "tags": [
@@ -323,7 +323,7 @@ window.PORTFOLIO_CONFIG = {
             "Renewable energy",
             "Applied physics"
           ],
-          "link": "https://bit.ly/SolarProject-nhutnhd"
+          "link": "https://bit.ly/SolarProject-dangnhutnguyen"
         }
       ],
       "paperTitle": "Research papers",
