@@ -145,6 +145,48 @@ window.PORTFOLIO_CONFIG = {
           "href": "https://github.com/nhdnhut",
           "external": true
         }
+      ],
+      "honors": [
+        {
+          "year": "2026",
+          "title": "Second Prize (Giai Nhi)",
+          "competition": "City-Level Academic Excellence Competition in Physics"
+        },
+        {
+          "year": "2024",
+          "title": "Encouragement Prize (Giai Khuyen khich)",
+          "competition": "24/7 Academic Olympic Competition in Physics"
+        },
+        {
+          "year": "2023",
+          "title": "First Prize (Giai Nhat)",
+          "competition": "Provincial Vietnam Science & Engineering Fair (ViSEF)"
+        },
+        {
+          "year": "2023",
+          "title": "Second Prize (Giai Nhi)",
+          "competition": "Provincial VIFOTEC Technical Innovation Competition"
+        },
+        {
+          "year": "2023",
+          "title": "Encouragement Prize (Giai Khuyen khich)",
+          "competition": "24/7 Academic Olympic Competition in Physics"
+        },
+        {
+          "year": "2022",
+          "title": "Third Prize (Giai Ba)",
+          "competition": "Provincial Vietnam Science & Engineering Fair (ViSEF)"
+        },
+        {
+          "year": "2022",
+          "title": "Encouragement Prize (Giai Khuyen khich)",
+          "competition": "Provincial VIFOTEC Technical Innovation Competition"
+        },
+        {
+          "year": "2019",
+          "title": "National Youth Delegate",
+          "competition": "6th National Children's Forum of Vietnam"
+        }
       ]
     },
     "research": {
