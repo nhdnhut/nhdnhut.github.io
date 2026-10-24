@@ -80,8 +80,8 @@ window.PORTFOLIO_CONFIG = {
   "profiles": [
     {
       "label": "GitHub",
-      "value": "@nhutnhd",
-      "href": "https://github.com/nhutnhd"
+      "value": "@nhdnhut",
+      "href": "https://github.com/nhdnhut"
     },
     {
       "label": "LinkedIn",
@@ -142,7 +142,7 @@ window.PORTFOLIO_CONFIG = {
         },
         {
           "label": "GitHub",
-          "href": "https://github.com/nhutnhd",
+          "href": "https://github.com/nhdnhut",
           "external": true
         }
       ]
@@ -184,8 +184,8 @@ window.PORTFOLIO_CONFIG = {
           "abstract": "Investigating neural network architectures directly from multivariable calculus and linear algebra primitives without black-box framework abstractions, observing gradient flows and weight interpretability.",
           "explanation": "Rather than treating neural nets as probabilistic black boxes, this work decomposes backpropagation into local gradient functions across high-dimensional manifolds, demonstrating how activation functions fold decision boundaries.",
           "paperUrl": "https://bit.ly/LogicPT-GT",
-          "codeUrl": "https://github.com/nhutnhd/Neural-Network-from-Scratch",
-          "demoUrl": "https://github.com/nhutnhd/MNIST-TRAINING",
+          "codeUrl": "https://github.com/nhdnhut/Neural-Network-from-Scratch",
+          "demoUrl": "https://github.com/nhdnhut/MNIST-TRAINING",
           "tags": [
             "First Principles",
             "Backpropagation",
@@ -200,7 +200,7 @@ window.PORTFOLIO_CONFIG = {
             "what-is-happening-inside-a-neural-network",
             "8gb-of-ram-and-the-dream-of-optimizing-llms"
           ],
-          "link": "https://github.com/nhutnhd/neural-network-from-scratch"
+          "link": "https://github.com/nhdnhut/neural-network-from-scratch"
         },
         {
           "id": "concentrated-solar-power",
@@ -210,7 +210,7 @@ window.PORTFOLIO_CONFIG = {
           "abstract": "Coupling geometric optics, thermodynamics, and real-time dual-axis solar tracking algorithms using multidirectional photo-sensor arrays.",
           "explanation": "Applying differential calculus to optimize parabolic dual-curvature reflector tilt relative to apparent solar coordinates. Dual-axis tracking yielded a 38.4% thermal flux density gain over fixed collectors.",
           "paperUrl": "https://bit.ly/SolarProject-dangnhutnguyen",
-          "codeUrl": "https://github.com/nhutnhd",
+          "codeUrl": "https://github.com/nhdnhut",
           "demoUrl": "",
           "tags": [
             "Thermodynamics",
@@ -262,138 +262,56 @@ window.PORTFOLIO_CONFIG = {
       "items": [
         {
           "year": "2026",
-          "title": "Boconic Book Sharing Platform",
-          "detail": "High-concurrency book circulation and asynchronous event-driven platform built with FastAPI 0.110+, SQLAlchemy 2.0 Async, aiogram 3.x, Docker, and PostgreSQL.",
-          "tags": [
-            "FastAPI",
-            "SQLAlchemy Async",
-            "Docker",
-            "PostgreSQL"
-          ],
-          "link": "https://github.com/nhutnhd/boconic-book-sharing-platform"
-        },
-        {
-          "year": "2026",
-          "title": "Sắc Việt Heritage Studio",
-          "detail": "Interactive 3D Vietnamese cultural heritage studio engineered with Next.js 15, React 19, Three.js, React Three Fiber, and SQLite WAL.",
-          "tags": [
-            "Next.js 15",
-            "React 19",
-            "Three.js",
-            "React Three Fiber"
-          ],
-          "link": "https://github.com/nhutnhd/sac-viet-heritage-studio"
-        },
-        {
-          "year": "2026",
-          "title": "NeuralWork Knowledge OS",
-          "detail": "Local-first knowledge operating system with Node.js Native SQLite WAL, FTS5 BM25 full-text search, and strict TypeScript monorepo architecture.",
-          "tags": [
-            "TypeScript 5",
-            "Node.js",
-            "SQLite WAL",
-            "FTS5 BM25"
-          ],
-          "link": "https://github.com/nhutnhd/neuralwork-knowledge-os"
-        },
-        {
-          "year": "2026",
-          "title": "Neural Compression CPU Benchmarks",
-          "detail": "Hardware-aware neural network compression benchmarks on CPU using PyTorch, INT8 post-training quantization (PTQ), L1 structured pruning, and SVD low-rank approximation.",
-          "tags": [
-            "PyTorch",
-            "Model Compression",
-            "INT8 PTQ",
-            "Pruning"
-          ],
-          "link": "https://github.com/nhutnhd/neural-compression-cpu-benchmarks"
-        },
-        {
-          "year": "2026",
           "title": "T4 Speculative Decoding Acceleration",
-          "detail": "Speculative decoding acceleration for large language models on NVIDIA T4 GPUs with BitsAndBytes NF4/INT8 quantization and LoRA distillation.",
+          "summary": "LLM speculative decoding acceleration framework for Qwen architectures using BitsAndBytes NF4/INT8 quantization and draft model distillation on NVIDIA T4.",
+          "href": "https://github.com/nhdnhut/t4-speculative-decoding",
           "tags": [
-            "LLM Inference",
+            "LLM",
             "Speculative Decoding",
-            "BitsAndBytes",
-            "LoRA"
-          ],
-          "link": "https://github.com/nhutnhd/t4-speculative-decoding"
-        },
-        {
-          "year": "2026",
-          "title": "Security Research Telemetry Workstation",
-          "detail": "Central security research repository and terminal workstation preserving 29 tools, payment telemetry, C2 framing, WinAPI PEB resolution, and credential forensics.",
-          "tags": [
-            "Threat Intelligence",
-            "Protocol Framing",
-            "Windows Internals",
-            "Forensics"
-          ],
-          "link": "https://github.com/nhutnhd/security-research-telemetry-workstation"
-        },
-        {
-          "year": "2025 - ",
-          "title": "Focumia",
-          "detail": "Client-side deep work Pomodoro and task hierarchy workspace designed with intentional constraints and local-first persistence.",
-          "tags": [
-            "Productivity systems",
-            "Local-First",
-            "Workflow design"
-          ],
-          "link": "https://github.com/nhutnhd/Focumia"
-        },
-        {
-          "year": "2025",
-          "title": "PrompTEA",
-          "detail": "Language model prompt optimization framework evaluating instructions, structures, and heuristic feedback loops for learning and research.",
-          "tags": [
-            "Prompt engineering",
-            "LLM tooling",
-            "NLP"
-          ],
-          "link": "https://github.com/nhutnhd/PrompTEA"
-        },
-        {
-          "year": "2024 - 2026",
-          "title": "Neural Network from Scratch",
-          "detail": "Interpretable neural networks from scratch implementing forward propagation, analytical gradients, and finite-difference gradient checking (< 10^-6) on MNIST.",
-          "tags": [
-            "Machine learning",
-            "Backpropagation",
-            "Gradient Checking"
-          ],
-          "link": "https://github.com/nhutnhd/neural-network-from-scratch"
-        },
-        {
-          "year": "2024",
-          "title": "Conservative Force Simulation",
-          "detail": "Numerical Runge-Kutta RK45 ODE solver, SymPy analytical derivations, and symplectic integrator for 2D conservative force field trajectories.",
-          "tags": [
-            "Scientific computing",
-            "Runge-Kutta RK45",
-            "SymPy",
-            "ODE Solvers"
-          ],
-          "link": "https://github.com/nhutnhd/conservative-force-simulation"
-        },
-        {
-          "year": "2026",
-          "title": "VOAI Olympic AI Comprehensive Curriculum",
-          "summary": "A 38-notebook master-level training program (M0 to M7) covering PyTorch tensor engineering, algorithmic optimization, and competitive AI contest workflows.",
-          "href": "https://github.com/nhutnhd/voai-olympic-ai-course",
-          "tags": [
-            "Curriculum",
-            "PyTorch",
-            "Jupyter",
-            "Algorithms"
+            "Qwen",
+            "PyTorch"
           ]
         },
         {
           "year": "2026",
-          "title": "Chinese-Vietnamese Transformer NMT",
-          "summary": "End-to-end Neural Machine Translation system built from scratch with SentencePiece subword tokenization, multi-head attention, and length-penalized beam search.",
-          "href": "https://github.com/nhutnhd/zh-vi-transformer-nmt",
+          "title": "Gemma4 Inference Latency Benchmarks",
+          "summary": "Systematic quantization profiling, latency analysis, and Random Forest execution time prediction for Google Gemma on resource-constrained hardware.",
+          "href": "https://github.com/nhdnhut/gemma4-t4-inference-benchmarks",
+          "tags": [
+            "LLM",
+            "Gemma",
+            "Quantization",
+            "Benchmarking"
+          ]
+        },
+        {
+          "year": "2026",
+          "title": "Neural Compression CPU Benchmarks",
+          "summary": "Hardware-aware neural network compression suite featuring INT8 post-training quantization, structured L1 pruning, and low-rank tensor decomposition on CPU.",
+          "href": "https://github.com/nhdnhut/neural-compression-cpu-benchmarks",
+          "tags": [
+            "Compression",
+            "INT8 PTQ",
+            "SVD",
+            "CPU Optimization"
+          ]
+        },
+        {
+          "year": "2026",
+          "title": "WARI Adaptive Residual Inference",
+          "summary": "Novel layer-granule residual CPU scheduling policy (WARI-L) optimizing working-set memory footprint during deep learning inference.",
+          "href": "https://github.com/nhdnhut/wari-adaptive-inference",
+          "tags": [
+            "Inference",
+            "Memory Scheduling",
+            "Systems"
+          ]
+        },
+        {
+          "year": "2026",
+          "title": "Chinese-to-Vietnamese Transformer NMT",
+          "summary": "End-to-end Neural Machine Translation system engineered from scratch with SentencePiece subword tokenization, multi-head attention, and length-penalized beam search.",
+          "href": "https://github.com/nhdnhut/zh-vi-transformer-nmt",
           "tags": [
             "NLP",
             "Transformer",
@@ -403,50 +321,108 @@ window.PORTFOLIO_CONFIG = {
         },
         {
           "year": "2026",
-          "title": "Web Reconnaissance & Simulation Framework",
-          "summary": "Single-page application API modeling workbench with a 147-endpoint catalog and an in-memory local Fastify sandbox simulator for defensive audit research.",
-          "href": "https://github.com/nhutnhd/web-recon-simulation-framework",
+          "title": "VOAI Olympic AI Comprehensive Curriculum",
+          "summary": "Master-level 38-notebook training curriculum (M0 to M7) covering PyTorch tensor engineering, algorithmic optimization, and competitive AI contest workflows.",
+          "href": "https://github.com/nhdnhut/voai-olympic-ai-course",
           "tags": [
-            "Security",
-            "API Modeling",
-            "Fastify",
-            "Sandboxing"
+            "Curriculum",
+            "PyTorch",
+            "Jupyter",
+            "Algorithms"
           ]
         },
         {
           "year": "2026",
-          "title": "Modular C2 Distributed Framework",
-          "summary": "Distributed command-and-control orchestration architecture featuring AES-256-GCM authenticated framing, multi-session management, and real-time dashboard telemetry.",
-          "href": "https://github.com/nhutnhd/modular-c2-distributed-framework",
+          "title": "Secure Binary Protocol Framework",
+          "summary": "Authenticated 6-byte packet framing specification with AES-256-GCM authenticated state machine and anti-replay counters for telemetry streaming.",
+          "href": "https://github.com/nhdnhut/secure-binary-protocol-framework",
           "tags": [
-            "Systems",
-            "C2",
+            "Networking",
+            "Protocol Security",
             "AES-GCM",
-            "Archived Research"
+            "Systems"
           ]
         },
         {
           "year": "2026",
-          "title": "Infostealer Mechanics Defense Lab",
-          "summary": "Defensive reverse engineering and digital forensics laboratory analyzing Chromium DPAPI v10/v20 derivation, SQLite vault parsing, and YARA detection signatures.",
-          "href": "https://github.com/nhutnhd/infostealer-mechanics-defense-lab",
+          "title": "Boconic Book Sharing Platform",
+          "summary": "Distributed book-sharing and community platform built on FastAPI 0.110+, SQLAlchemy 2.0 Async, Telegram Bot aiogram 3.x, and Docker containers.",
+          "href": "https://github.com/nhdnhut/boconic-book-sharing-platform",
           "tags": [
-            "Forensics",
-            "DPAPI",
-            "YARA",
-            "Archived Research"
+            "FastAPI",
+            "AsyncIO",
+            "Docker",
+            "PostgreSQL"
           ]
         },
         {
           "year": "2026",
-          "title": "System Activity Telemetry Auditor",
-          "summary": "Transparent, clean-room telemetry auditing system utilizing low-level KLG1 binary overlay protocol and strict PE header parsing.",
-          "href": "https://github.com/nhutnhd/system-activity-telemetry-auditor",
+          "title": "Sắc Việt Heritage Studio",
+          "summary": "Interactive 3D Vietnamese cultural heritage digital studio utilizing Next.js 15, React 19, Three.js, React Three Fiber, and SQLite WAL storage.",
+          "href": "https://github.com/nhdnhut/sac-viet-heritage-studio",
           "tags": [
-            "C/C++",
-            "WinAPI",
-            "PEB",
-            "Telemetry"
+            "3D Web",
+            "Next.js 15",
+            "Three.js",
+            "React 19"
+          ]
+        },
+        {
+          "year": "2026",
+          "title": "NeuralWork Knowledge OS",
+          "summary": "Local-first knowledge workspace featuring a TypeScript 5 monorepo, Node.js native SQLite WAL engine, and FTS5 BM25 search ranking.",
+          "href": "https://github.com/nhdnhut/neuralwork-knowledge-os",
+          "tags": [
+            "TypeScript 5",
+            "SQLite WAL",
+            "FTS5",
+            "Local-first"
+          ]
+        },
+        {
+          "year": "2026",
+          "title": "PrompTEA Prompt Optimization",
+          "summary": "Language model prompt optimization and systematic refinement framework leveraging NLP and iterative reward signals.",
+          "href": "https://github.com/nhdnhut/promptea-prompt-optimization",
+          "tags": [
+            "LLM",
+            "Prompt Engineering",
+            "NLP"
+          ]
+        },
+        {
+          "year": "2026",
+          "title": "Neural Network from Scratch",
+          "summary": "First-principles neural network with analytical backpropagation and finite-difference gradient verification (< 10^-6) on MNIST.",
+          "href": "https://github.com/nhdnhut/neural-network-from-scratch",
+          "tags": [
+            "Deep Learning",
+            "First Principles",
+            "NumPy",
+            "Calculus"
+          ]
+        },
+        {
+          "year": "2026",
+          "title": "Conservative Force Simulation",
+          "summary": "Scientific computing engine solving non-linear conservative potential ODEs via Runge-Kutta RK45 with CustomTkinter and MATLAB interfaces.",
+          "href": "https://github.com/nhdnhut/conservative-force-simulation",
+          "tags": [
+            "Physics",
+            "RK45 ODE",
+            "SymPy",
+            "Simulation"
+          ]
+        },
+        {
+          "year": "2026",
+          "title": "Focumia Productivity OS",
+          "summary": "Client-side deep work Pomodoro workstation with hierarchical task management, soundscape generators, and zero-server persistence.",
+          "href": "https://github.com/nhdnhut/focumia-productivity-os",
+          "tags": [
+            "Productivity",
+            "Vanilla JS",
+            "Local Storage"
           ]
         }
       ],
@@ -475,7 +451,7 @@ window.PORTFOLIO_CONFIG = {
         },
         {
           "label": "GitHub",
-          "href": "https://github.com/nhutnhd",
+          "href": "https://github.com/nhdnhut",
           "external": true
         }
       ]
