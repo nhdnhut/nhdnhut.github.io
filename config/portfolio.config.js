@@ -1,16 +1,10 @@
-/*
-  PORTFOLIO CONTENT CONFIG — AUTO-GENERATED & MANAGED BY STUDIO
-  -------------------------------------------------------------
-  This is the single source for all visible site content and interface labels.
-  Generated: 2026-10-11 16:03:17
-*/
 window.PORTFOLIO_CONFIG = {
   "site": {
-    "name": "Nguyễn Huỳnh Đăng Nhựt",
-    "shortName": "Đăng Nhựt",
+    "name": "Nguy\u1ec5n Hu\u1ef3nh \u0110\u0103ng Nh\u1ef1t",
+    "shortName": "\u0110\u0103ng Nh\u1ef1t",
     "role": "Artificial Intelligence @ UIT, VNU-HCM",
-    "footerRole": "Artificial Intelligence · UIT, VNU-HCM",
-    "location": "Vietnam · GMT+7",
+    "footerRole": "Artificial Intelligence \u00b7 UIT, VNU-HCM",
+    "location": "Vietnam \u00b7 GMT+7",
     "copyrightYear": "2026",
     "email": "penciltalk0910@gmail.com",
     "profileImage": "assets/profile.jpg",
@@ -37,8 +31,8 @@ window.PORTFOLIO_CONFIG = {
     "books": "books",
     "pages": "pages",
     "loadingNotes": "Loading notes",
-    "loadingArchive": "Loading the writing archive…",
-    "loadingArticle": "Loading field note…",
+    "loadingArchive": "Loading the writing archive\u2026",
+    "loadingArticle": "Loading field note\u2026",
     "configErrorOverline": "Configuration",
     "configErrorTitle": "Portfolio config could not be loaded.",
     "configErrorText": "Check config/portfolio.config.js for a syntax error.",
@@ -103,8 +97,8 @@ window.PORTFOLIO_CONFIG = {
   ],
   "pages": {
     "about": {
-      "metaTitle": "Nguyễn Huỳnh Đăng Nhựt - Academic Portfolio",
-      "metaDescription": "Academic portfolio of Nguyễn Huỳnh Đăng Nhựt - Artificial Intelligence student at UIT, VNU-HCM.",
+      "metaTitle": "Nguy\u1ec5n Hu\u1ef3nh \u0110\u0103ng Nh\u1ef1t - Academic Portfolio",
+      "metaDescription": "Academic portfolio of Nguy\u1ec5n Hu\u1ef3nh \u0110\u0103ng Nh\u1ef1t - Artificial Intelligence student at UIT, VNU-HCM.",
       "overline": "About",
       "greeting": "Hi there.",
       "introduction": [
@@ -118,7 +112,7 @@ window.PORTFOLIO_CONFIG = {
           "href": "projects.html"
         },
         {
-          "label": "Résumé",
+          "label": "R\u00e9sum\u00e9",
           "href": "assets/nguyenhuynhdangnhut_cv.pdf",
           "external": true
         }
@@ -154,7 +148,7 @@ window.PORTFOLIO_CONFIG = {
       ]
     },
     "research": {
-      "metaTitle": "Research - Nguyễn Huỳnh Đăng Nhựt",
+      "metaTitle": "Research - Nguy\u1ec5n Hu\u1ef3nh \u0110\u0103ng Nh\u1ef1t",
       "metaDescription": "Research directions in learning systems, computational modeling, mathematics, and energy.",
       "overline": "Research",
       "title": "Questions before answers.",
@@ -165,7 +159,7 @@ window.PORTFOLIO_CONFIG = {
           "number": "01",
           "title": "Learning systems",
           "question": "How can intelligent systems learn while making their reasoning easier to understand?",
-          "detail": "Neural networks, interpretability, and productive human–AI collaboration."
+          "detail": "Neural networks, interpretability, and productive human\u2013AI collaboration."
         },
         {
           "number": "02",
@@ -186,7 +180,7 @@ window.PORTFOLIO_CONFIG = {
           "id": "neural-network-from-scratch",
           "title": "Interpretable Neural Networks from Scratch",
           "period": "2024 - 2026",
-          "status": "Active Research · In Progress",
+          "status": "Active Research \u00b7 In Progress",
           "abstract": "Investigating neural network architectures directly from multivariable calculus and linear algebra primitives without black-box framework abstractions, observing gradient flows and weight interpretability.",
           "explanation": "Rather than treating neural nets as probabilistic black boxes, this work decomposes backpropagation into local gradient functions across high-dimensional manifolds, demonstrating how activation functions fold decision boundaries.",
           "paperUrl": "https://bit.ly/LogicPT-GT",
@@ -199,19 +193,20 @@ window.PORTFOLIO_CONFIG = {
             "Python / NumPy"
           ],
           "overview": "In an era where deep learning libraries hide underlying mechanics behind a single autograd call, deep mathematical comprehension can easily degrade. This research rebuilds tensor transformations, forward loops, and analytical backpropagation from first principles without autograd dependencies.",
-          "firstPrinciples": "A canonical layer computes Z = X·W + b followed by non-linear activation σ(Z). Backpropagation explicitly realizes the multivariable chain rule: dL/dW = X^T @ (dL/dZ), dL/db = sum(dL/dZ), and dL/dX = (dL/dZ) @ W^T, forming an explicit computational responsibility chain.",
+          "firstPrinciples": "A canonical layer computes Z = X\u00b7W + b followed by non-linear activation \u03c3(Z). Backpropagation explicitly realizes the multivariable chain rule: dL/dW = X^T @ (dL/dZ), dL/db = sum(dL/dZ), and dL/dX = (dL/dZ) @ W^T, forming an explicit computational responsibility chain.",
           "methodology": "Modular pure Python and NumPy implementation of DenseLayer, Activations (ReLU, Softmax), Categorical Cross-Entropy, and SGD. Rigorous analytical gradient checking validates gradients against finite-difference numerical approximations with relative error below 1e-7.",
           "findings": "Achieved 97.2% test accuracy on MNIST within 15 epochs. Empirically demonstrated that gradient vanishing is mitigated through He/Kaiming Normal weight initialization and batch normalization.",
           "relatedWritings": [
             "what-is-happening-inside-a-neural-network",
             "8gb-of-ram-and-the-dream-of-optimizing-llms"
-          ]
+          ],
+          "link": "https://github.com/nhutnhd/neural-network-from-scratch"
         },
         {
           "id": "concentrated-solar-power",
           "title": "Concentrated Solar Thermal Modeling & Tracking System",
           "period": "2023 - 2025",
-          "status": "Completed · Peer Verified",
+          "status": "Completed \u00b7 Peer Verified",
           "abstract": "Coupling geometric optics, thermodynamics, and real-time dual-axis solar tracking algorithms using multidirectional photo-sensor arrays.",
           "explanation": "Applying differential calculus to optimize parabolic dual-curvature reflector tilt relative to apparent solar coordinates. Dual-axis tracking yielded a 38.4% thermal flux density gain over fixed collectors.",
           "paperUrl": "https://bit.ly/SolarProject-dangnhutnguyen",
@@ -226,10 +221,11 @@ window.PORTFOLIO_CONFIG = {
           "overview": "Conventional static solar collectors suffer significant cosine losses as the incident solar angle fluctuates throughout the diurnal and seasonal cycles. This project designs a dual-axis tracking concentrator optimizing focal flux concentration.",
           "firstPrinciples": "Based on the parabolic profile y^2 = 4fx, incident parallel rays focus sharply onto focal point F. Real-time solar zenith and azimuth computations drive dual stepper actuators to lock the optical axis onto the solar irradiance vector.",
           "methodology": "Integrated quadrant-partitioned LDR bridge measuring differential irradiance across orthogonal axes. Signals are processed through low-pass filters and a deadband thresholding controller on Arduino to prevent mechanical oscillation under intermittent cloud cover.",
-          "findings": "Field measurements demonstrated a 38.4% increase in collected thermal flux compared to static panels, sustaining focal temperatures above 180°C in empirical outdoor conditions.",
+          "findings": "Field measurements demonstrated a 38.4% increase in collected thermal flux compared to static panels, sustaining focal temperatures above 180\u00b0C in empirical outdoor conditions.",
           "relatedWritings": [
             "the-first-line-of-code-that-looked-at-the-sun"
-          ]
+          ],
+          "link": "https://drive.google.com/drive/folders/1g0kjru5iUEEIMqUf0hc3hUX7bRBMZUkr"
         }
       ],
       "methodTitle": "Working method",
@@ -257,7 +253,7 @@ window.PORTFOLIO_CONFIG = {
       ]
     },
     "projects": {
-      "metaTitle": "Works - Nguyễn Huỳnh Đăng Nhựt",
+      "metaTitle": "Works - Nguy\u1ec5n Hu\u1ef3nh \u0110\u0103ng Nh\u1ef1t",
       "metaDescription": "Selected projects and experiments in AI, learning tools, and applied physics.",
       "overline": "Works",
       "title": "Things I build to understand.",
@@ -265,11 +261,84 @@ window.PORTFOLIO_CONFIG = {
       "listTitle": "Selected projects",
       "items": [
         {
+          "year": "2026",
+          "title": "Boconic Book Sharing Platform",
+          "detail": "High-concurrency book circulation and asynchronous event-driven platform built with FastAPI 0.110+, SQLAlchemy 2.0 Async, aiogram 3.x, Docker, and PostgreSQL.",
+          "tags": [
+            "FastAPI",
+            "SQLAlchemy Async",
+            "Docker",
+            "PostgreSQL"
+          ],
+          "link": "https://github.com/nhutnhd/boconic-book-sharing-platform"
+        },
+        {
+          "year": "2026",
+          "title": "S\u1eafc Vi\u1ec7t Heritage Studio",
+          "detail": "Interactive 3D Vietnamese cultural heritage studio engineered with Next.js 15, React 19, Three.js, React Three Fiber, and SQLite WAL.",
+          "tags": [
+            "Next.js 15",
+            "React 19",
+            "Three.js",
+            "React Three Fiber"
+          ],
+          "link": "https://github.com/nhutnhd/sac-viet-heritage-studio"
+        },
+        {
+          "year": "2026",
+          "title": "NeuralWork Knowledge OS",
+          "detail": "Local-first knowledge operating system with Node.js Native SQLite WAL, FTS5 BM25 full-text search, and strict TypeScript monorepo architecture.",
+          "tags": [
+            "TypeScript 5",
+            "Node.js",
+            "SQLite WAL",
+            "FTS5 BM25"
+          ],
+          "link": "https://github.com/nhutnhd/neuralwork-knowledge-os"
+        },
+        {
+          "year": "2026",
+          "title": "Neural Compression CPU Benchmarks",
+          "detail": "Hardware-aware neural network compression benchmarks on CPU using PyTorch, INT8 post-training quantization (PTQ), L1 structured pruning, and SVD low-rank approximation.",
+          "tags": [
+            "PyTorch",
+            "Model Compression",
+            "INT8 PTQ",
+            "Pruning"
+          ],
+          "link": "https://github.com/nhutnhd/neural-compression-cpu-benchmarks"
+        },
+        {
+          "year": "2026",
+          "title": "T4 Speculative Decoding Acceleration",
+          "detail": "Speculative decoding acceleration for large language models on NVIDIA T4 GPUs with BitsAndBytes NF4/INT8 quantization and LoRA distillation.",
+          "tags": [
+            "LLM Inference",
+            "Speculative Decoding",
+            "BitsAndBytes",
+            "LoRA"
+          ],
+          "link": "https://github.com/nhutnhd/t4-speculative-decoding"
+        },
+        {
+          "year": "2026",
+          "title": "Security Research Telemetry Workstation",
+          "detail": "Central security research repository and terminal workstation preserving 29 tools, payment telemetry, C2 framing, WinAPI PEB resolution, and credential forensics.",
+          "tags": [
+            "Threat Intelligence",
+            "Protocol Framing",
+            "Windows Internals",
+            "Forensics"
+          ],
+          "link": "https://github.com/nhutnhd/security-research-telemetry-workstation"
+        },
+        {
           "year": "2025 - ",
           "title": "Focumia",
-          "detail": "Focumia explores how small, intentional constraints can make deep work easier to begin and sustain through timers, task hierarchy, and personal workflow design.",
+          "detail": "Client-side deep work Pomodoro and task hierarchy workspace designed with intentional constraints and local-first persistence.",
           "tags": [
             "Productivity systems",
+            "Local-First",
             "Workflow design"
           ],
           "link": "https://github.com/nhutnhd/Focumia"
@@ -277,66 +346,49 @@ window.PORTFOLIO_CONFIG = {
         {
           "year": "2025",
           "title": "PrompTEA",
-          "detail": "PrompTEA studies prompting as a craft by testing instructions, structures, and feedback loops for learning and research.",
+          "detail": "Language model prompt optimization framework evaluating instructions, structures, and heuristic feedback loops for learning and research.",
           "tags": [
             "Prompt engineering",
-            "LLM tooling"
+            "LLM tooling",
+            "NLP"
           ],
           "link": "https://github.com/nhutnhd/PrompTEA"
         },
         {
-          "year": "2024",
+          "year": "2024 - 2026",
           "title": "Neural Network from Scratch",
-          "detail": "This project implements forward propagation, gradients, and backpropagation from the mathematical foundations. The priority was understanding, not convenience.",
+          "detail": "Interpretable neural networks from scratch implementing forward propagation, analytical gradients, and finite-difference gradient checking (< 10^-6) on MNIST.",
           "tags": [
             "Machine learning",
             "Backpropagation",
-            "Python"
+            "Gradient Checking"
           ],
-          "link": "https://github.com/nhutnhd/Neural-Network-from-Scratch"
+          "link": "https://github.com/nhutnhd/neural-network-from-scratch"
         },
         {
           "year": "2024",
-          "title": "MNIST Network Training",
-          "detail": "A practical continuation of the neural-network-from-scratch work, comparing training runs, architecture choices, and hyperparameters on MNIST.",
+          "title": "Conservative Force Simulation",
+          "detail": "Numerical Runge-Kutta RK45 ODE solver, SymPy analytical derivations, and symplectic integrator for 2D conservative force field trajectories.",
           "tags": [
-            "Computer vision",
-            "Model optimization"
+            "Scientific computing",
+            "Runge-Kutta RK45",
+            "SymPy",
+            "ODE Solvers"
           ],
-          "link": "https://github.com/nhutnhd/MNIST-TRAINING"
-        },
-        {
-          "year": "2024 -",
-          "title": "AI for Research Efficiency",
-          "detail": "An ongoing inquiry into how AI can support literature review, note organization, scientific writing, and useful connections across sources.",
-          "tags": [
-            "Research workflow",
-            "Information synthesis"
-          ],
-          "link": ""
-        },
-        {
-          "year": "2023 - 2025",
-          "title": "Concentrated Solar Power",
-          "detail": "The project combines optics, thermodynamics, energy conversion, cost, and feasibility as both a physics question and an engineering design problem.",
-          "tags": [
-            "Renewable energy",
-            "Applied physics"
-          ],
-          "link": "https://bit.ly/SolarProject-dangnhutnguyen"
+          "link": "https://github.com/nhutnhd/conservative-force-simulation"
         }
       ],
       "paperTitle": "Research papers",
       "papers": [
         {
-          "title": "LogicPT–GT",
-          "detail": "Logic · problem solving · structured thinking",
+          "title": "LogicPT\u2013GT",
+          "detail": "Logic \u00b7 problem solving \u00b7 structured thinking",
           "language": "Vietnamese",
           "link": "https://bit.ly/LogicPT-GT"
         },
         {
-          "title": "AIAPE–Education",
-          "detail": "AI · programming education · learning systems",
+          "title": "AIAPE\u2013Education",
+          "detail": "AI \u00b7 programming education \u00b7 learning systems",
           "language": "English",
           "link": "https://bit.ly/AIAPE-Education"
         }
@@ -357,17 +409,17 @@ window.PORTFOLIO_CONFIG = {
       ]
     },
     "books": {
-      "metaTitle": "Books - Nguyễn Huỳnh Đăng Nhựt",
-      "metaDescription": "Six books on programming, technology, and structured reasoning written by Nguyễn Huỳnh Đăng Nhựt.",
+      "metaTitle": "Books - Nguy\u1ec5n Hu\u1ef3nh \u0110\u0103ng Nh\u1ef1t",
+      "metaDescription": "Six books on programming, technology, and structured reasoning written by Nguy\u1ec5n Hu\u1ef3nh \u0110\u0103ng Nh\u1ef1t.",
       "overline": "Books",
       "title": "Learning, written from first principles.",
       "description": "Six practical books on programming, embedded systems, structured reasoning, and learning with artificial intelligence.",
       "listTitle": "Written works",
       "items": [
         {
-          "title": "LogicPT–GT: Phân tích và Chiến thuật",
-          "subtitle": "Tài liệu tham khảo và tự học Logic · Version 2.2.0",
-          "detail": "Phân tích bài toán sắp xếp, hệ điều kiện, suy luận loại trừ và chiến thuật giải bài có cấu trúc.",
+          "title": "LogicPT\u2013GT: Ph\u00e2n t\u00edch v\u00e0 Chi\u1ebfn thu\u1eadt",
+          "subtitle": "T\u00e0i li\u1ec7u tham kh\u1ea3o v\u00e0 t\u1ef1 h\u1ecdc Logic \u00b7 Version 2.2.0",
+          "detail": "Ph\u00e2n t\u00edch b\u00e0i to\u00e1n s\u1eafp x\u1ebfp, h\u1ec7 \u0111i\u1ec1u ki\u1ec7n, suy lu\u1eadn lo\u1ea1i tr\u1eeb v\u00e0 chi\u1ebfn thu\u1eadt gi\u1ea3i b\u00e0i c\u00f3 c\u1ea5u tr\u00fac.",
           "language": "Vietnamese",
           "year": "2026",
           "pages": 36,
@@ -375,9 +427,9 @@ window.PORTFOLIO_CONFIG = {
           "file": "assets/books/logicpt-gt.pdf"
         },
         {
-          "title": "Python từ trong chăn - Tập 1",
-          "subtitle": "Từ những dòng lệnh đầu tiên đến tư duy lập trình",
-          "detail": "Môi trường, biến, kiểu dữ liệu, nhập xuất, điều kiện, vòng lặp và hàm.",
+          "title": "Python t\u1eeb trong ch\u0103n - T\u1eadp 1",
+          "subtitle": "T\u1eeb nh\u1eefng d\u00f2ng l\u1ec7nh \u0111\u1ea7u ti\u00ean \u0111\u1ebfn t\u01b0 duy l\u1eadp tr\u00ecnh",
+          "detail": "M\u00f4i tr\u01b0\u1eddng, bi\u1ebfn, ki\u1ec3u d\u1eef li\u1ec7u, nh\u1eadp xu\u1ea5t, \u0111i\u1ec1u ki\u1ec7n, v\u00f2ng l\u1eb7p v\u00e0 h\u00e0m.",
           "language": "Vietnamese",
           "year": "2026",
           "pages": 201,
@@ -385,9 +437,9 @@ window.PORTFOLIO_CONFIG = {
           "file": "assets/books/python-tu-trong-chan-tap-1.pdf"
         },
         {
-          "title": "Python từ trong chăn - Tập 2",
-          "subtitle": "Giáo trình tự học tiếp nối Tập 1",
-          "detail": "Cấu trúc dữ liệu, thuật toán, tệp, lỗi, hướng đối tượng, kiểm thử và ứng dụng thực tế.",
+          "title": "Python t\u1eeb trong ch\u0103n - T\u1eadp 2",
+          "subtitle": "Gi\u00e1o tr\u00ecnh t\u1ef1 h\u1ecdc ti\u1ebfp n\u1ed1i T\u1eadp 1",
+          "detail": "C\u1ea5u tr\u00fac d\u1eef li\u1ec7u, thu\u1eadt to\u00e1n, t\u1ec7p, l\u1ed7i, h\u01b0\u1edbng \u0111\u1ed1i t\u01b0\u1ee3ng, ki\u1ec3m th\u1eed v\u00e0 \u1ee9ng d\u1ee5ng th\u1ef1c t\u1ebf.",
           "language": "Vietnamese",
           "year": "2026",
           "pages": 350,
@@ -395,9 +447,9 @@ window.PORTFOLIO_CONFIG = {
           "file": "assets/books/python-tu-trong-chan-tap-2.pdf"
         },
         {
-          "title": "Arduino từ trong chăn",
-          "subtitle": "Từ một chiếc LED đến hệ thống biết quan sát và phản hồi",
-          "detail": "Điện tử nền tảng, cảm biến, cơ cấu chấp hành, thuật toán thời gian thực và dự án tích hợp.",
+          "title": "Arduino t\u1eeb trong ch\u0103n",
+          "subtitle": "T\u1eeb m\u1ed9t chi\u1ebfc LED \u0111\u1ebfn h\u1ec7 th\u1ed1ng bi\u1ebft quan s\u00e1t v\u00e0 ph\u1ea3n h\u1ed3i",
+          "detail": "\u0110i\u1ec7n t\u1eed n\u1ec1n t\u1ea3ng, c\u1ea3m bi\u1ebfn, c\u01a1 c\u1ea5u ch\u1ea5p h\u00e0nh, thu\u1eadt to\u00e1n th\u1eddi gian th\u1ef1c v\u00e0 d\u1ef1 \u00e1n t\u00edch h\u1ee3p.",
           "language": "Vietnamese",
           "year": "2026",
           "pages": 312,
@@ -429,8 +481,8 @@ window.PORTFOLIO_CONFIG = {
       "note": "Projects and research manuscripts are collected together in [Works](projects.html#research-papers). Longer educational works and practical guides live here in Books."
     },
     "activities": {
-      "metaTitle": "Timeline - Nguyễn Huỳnh Đăng Nhựt",
-      "metaDescription": "Education, awards, leadership, and academic activities of Nguyễn Huỳnh Đăng Nhựt.",
+      "metaTitle": "Timeline - Nguy\u1ec5n Hu\u1ef3nh \u0110\u0103ng Nh\u1ef1t",
+      "metaDescription": "Education, awards, leadership, and academic activities of Nguy\u1ec5n Hu\u1ef3nh \u0110\u0103ng Nh\u1ef1t.",
       "overline": "Timeline",
       "title": "Learning in public.",
       "description": "Education, academic milestones, science competitions, and student leadership.",
@@ -447,7 +499,7 @@ window.PORTFOLIO_CONFIG = {
         {
           "year": "2026",
           "type": "Award",
-          "title": "Second Prize · City-Level Academic Excellence Competition",
+          "title": "Second Prize \u00b7 City-Level Academic Excellence Competition",
           "place": "Physics",
           "storySlug": "second-prize-in-physics-and-why-i-still-chose-ai",
           "albumId": "physics-award-to-ai-pivot-2025"
@@ -455,7 +507,7 @@ window.PORTFOLIO_CONFIG = {
         {
           "year": "2023",
           "type": "Award",
-          "title": "First Prize · Provincial ViSEF",
+          "title": "First Prize \u00b7 Provincial ViSEF",
           "place": "Science and Engineering Fair",
           "storySlug": "the-first-line-of-code-that-looked-at-the-sun",
           "albumId": "solar-tracker-circuit-2021"
@@ -463,22 +515,22 @@ window.PORTFOLIO_CONFIG = {
         {
           "year": "2023",
           "type": "Award",
-          "title": "Second Prize · Provincial VIFOTEC",
+          "title": "Second Prize \u00b7 Provincial VIFOTEC",
           "place": "Science and technology innovation",
           "storySlug": "the-first-line-of-code-that-looked-at-the-sun"
         },
         {
           "year": "2021 - 23",
           "type": "Leadership",
-          "title": "Vice President · Provincial Children's Council",
-          "place": "Bà Rịa–Vũng Tàu",
+          "title": "Vice President \u00b7 Provincial Children's Council",
+          "place": "B\u00e0 R\u1ecba\u2013V\u0169ng T\u00e0u",
           "storySlug": "childrens-forum",
           "albumId": "national-children-forum-2019"
         },
         {
           "year": "2019",
           "type": "Leadership",
-          "title": "National Delegate · 6th National Children's Forum",
+          "title": "National Delegate \u00b7 6th National Children's Forum",
           "place": "Youth voice and child advocacy",
           "storySlug": "childrens-forum",
           "albumId": "national-children-forum-2019"
@@ -501,7 +553,7 @@ window.PORTFOLIO_CONFIG = {
       ]
     },
     "library": {
-      "metaTitle": "Library - Nguyễn Huỳnh Đăng Nhựt",
+      "metaTitle": "Library - Nguy\u1ec5n Hu\u1ef3nh \u0110\u0103ng Nh\u1ef1t",
       "metaDescription": "A growing reading map across mathematics, intelligent systems, physics, and research practice.",
       "overline": "My library",
       "title": "A map of what I am learning.",
@@ -514,7 +566,7 @@ window.PORTFOLIO_CONFIG = {
         },
         {
           "title": "Intelligent systems",
-          "detail": "Neural networks, optimization, and human–AI collaboration"
+          "detail": "Neural networks, optimization, and human\u2013AI collaboration"
         },
         {
           "title": "Physics and energy",
@@ -537,19 +589,19 @@ window.PORTFOLIO_CONFIG = {
       "shelfSubtitle": ""
     },
     "writing": {
-      "metaTitle": "Sixteen Logbooks - Nguyễn Huỳnh Đăng Nhựt",
-      "metaDescription": "Sixteen bilingual logbooks on learning, building, fairness, and artificial intelligence by Nguyễn Huỳnh Đăng Nhựt.",
+      "metaTitle": "Sixteen Logbooks - Nguy\u1ec5n Hu\u1ef3nh \u0110\u0103ng Nh\u1ef1t",
+      "metaDescription": "Sixteen bilingual logbooks on learning, building, fairness, and artificial intelligence by Nguy\u1ec5n Hu\u1ef3nh \u0110\u0103ng Nh\u1ef1t.",
       "overline": "Writing",
       "title": "Sixteen logbooks.",
-      "description": "A chronological record of learning, building, choosing, and growing-from a children’s forum in 2019 to questions about AI and memory in 2026.",
+      "description": "A chronological record of learning, building, choosing, and growing-from a children\u2019s forum in 2019 to questions about AI and memory in 2026.",
       "researchInterests": {
         "en": {
           "title": "Research interests & open questions",
           "lead": "I am an Artificial Intelligence student at the University of Information Technology (VNU-HCM). My daily focus sits between machine learning from first principles, computational modeling, and research tools that help people think more clearly. Rather than treating neural networks as black boxes, I spend time taking apart models, working through the underlying multivariable calculus, testing small self-contained implementations, and keeping notes on what actually works and what remains unfinished."
         },
         "vi": {
-          "title": "Chủ đề & câu hỏi đang tìm hiểu",
-          "lead": "Tôi là sinh viên ngành Trí tuệ Nhân tạo tại Trường Đại học Công nghệ Thông tin (ĐHQG TP.HCM). Hướng tìm hiểu hằng ngày của tôi xoay quanh việc học máy từ nguyên lý đầu tiên, mô hình hóa tính toán và những công cụ hỗ trợ tư duy rõ ràng hơn. Thay vì xem mạng nơ-ron như chiếc hộp đen bí ẩn, tôi dành thời gian mổ xẻ từng mô hình, làm việc với giải tích nhiều biến nền tảng, tự tay lập trình các thử nghiệm nhỏ và ghi chép lại những gì thực sự vận hành cùng những điều còn dang dở."
+          "title": "Ch\u1ee7 \u0111\u1ec1 & c\u00e2u h\u1ecfi \u0111ang t\u00ecm hi\u1ec3u",
+          "lead": "T\u00f4i l\u00e0 sinh vi\u00ean ng\u00e0nh Tr\u00ed tu\u1ec7 Nh\u00e2n t\u1ea1o t\u1ea1i Tr\u01b0\u1eddng \u0110\u1ea1i h\u1ecdc C\u00f4ng ngh\u1ec7 Th\u00f4ng tin (\u0110HQG TP.HCM). H\u01b0\u1edbng t\u00ecm hi\u1ec3u h\u1eb1ng ng\u00e0y c\u1ee7a t\u00f4i xoay quanh vi\u1ec7c h\u1ecdc m\u00e1y t\u1eeb nguy\u00ean l\u00fd \u0111\u1ea7u ti\u00ean, m\u00f4 h\u00ecnh h\u00f3a t\u00ednh to\u00e1n v\u00e0 nh\u1eefng c\u00f4ng c\u1ee5 h\u1ed7 tr\u1ee3 t\u01b0 duy r\u00f5 r\u00e0ng h\u01a1n. Thay v\u00ec xem m\u1ea1ng n\u01a1-ron nh\u01b0 chi\u1ebfc h\u1ed9p \u0111en b\u00ed \u1ea9n, t\u00f4i d\u00e0nh th\u1eddi gian m\u1ed5 x\u1ebb t\u1eebng m\u00f4 h\u00ecnh, l\u00e0m vi\u1ec7c v\u1edbi gi\u1ea3i t\u00edch nhi\u1ec1u bi\u1ebfn n\u1ec1n t\u1ea3ng, t\u1ef1 tay l\u1eadp tr\u00ecnh c\u00e1c th\u1eed nghi\u1ec7m nh\u1ecf v\u00e0 ghi ch\u00e9p l\u1ea1i nh\u1eefng g\u00ec th\u1ef1c s\u1ef1 v\u1eadn h\u00e0nh c\u00f9ng nh\u1eefng \u0111i\u1ec1u c\u00f2n dang d\u1edf."
         }
       },
       "explorations": [
@@ -557,20 +609,20 @@ window.PORTFOLIO_CONFIG = {
           "id": "neural-networks-scratch",
           "title": {
             "en": "Interpretable Neural Networks from Scratch",
-            "vi": "Mạng Nơ-ron Tự Cài Đặt từ Nguyên Lý Đầu Tiên"
+            "vi": "M\u1ea1ng N\u01a1-ron T\u1ef1 C\u00e0i \u0110\u1eb7t t\u1eeb Nguy\u00ean L\u00fd \u0110\u1ea7u Ti\u00ean"
           },
           "problem": {
             "en": "Decomposing multivariable calculus and analytical gradient flows without black-box autograd abstractions.",
-            "vi": "Bóc tách giải tích nhiều biến và dòng lan truyền gradient thuần túy mà không dựa vào autograd đóng hộp."
+            "vi": "B\u00f3c t\u00e1ch gi\u1ea3i t\u00edch nhi\u1ec1u bi\u1ebfn v\u00e0 d\u00f2ng lan truy\u1ec1n gradient thu\u1ea7n t\u00fay m\u00e0 kh\u00f4ng d\u1ef1a v\u00e0o autograd \u0111\u00f3ng h\u1ed9p."
           },
           "status": "in-progress",
           "statusLabel": {
             "en": "In progress",
-            "vi": "Đang thực hiện"
+            "vi": "\u0110ang th\u1ef1c hi\u1ec7n"
           },
           "actionLabel": {
             "en": "Read research notes",
-            "vi": "Đọc ghi chép nghiên cứu"
+            "vi": "\u0110\u1ecdc ghi ch\u00e9p nghi\u00ean c\u1ee9u"
           },
           "href": "writing.html?slug=what-is-happening-inside-a-neural-network",
           "albumId": "neural-network-from-scratch-2024"
@@ -579,20 +631,20 @@ window.PORTFOLIO_CONFIG = {
           "id": "solar-thermal-tracking",
           "title": {
             "en": "Concentrated Solar Thermal Tracking & Control",
-            "vi": "Hệ thống Quang Nhiệt Mặt Trời Tập Trung & Bám Quang 2 Trục"
+            "vi": "H\u1ec7 th\u1ed1ng Quang Nhi\u1ec7t M\u1eb7t Tr\u1eddi T\u1eadp Trung & B\u00e1m Quang 2 Tr\u1ee5c"
           },
           "problem": {
             "en": "Coupling parabolic optics, differential calculus, and real-time dual-axis sensor feedback to minimize diurnal cosine loss.",
-            "vi": "Kết hợp quang học parabol, vi phân và phản hồi cảm biến hai trục nhằm giảm thiểu tổn thất góc chiếu."
+            "vi": "K\u1ebft h\u1ee3p quang h\u1ecdc parabol, vi ph\u00e2n v\u00e0 ph\u1ea3n h\u1ed3i c\u1ea3m bi\u1ebfn hai tr\u1ee5c nh\u1eb1m gi\u1ea3m thi\u1ec3u t\u1ed5n th\u1ea5t g\u00f3c chi\u1ebfu."
           },
           "status": "completed",
           "statusLabel": {
             "en": "Completed",
-            "vi": "Đã hoàn thành"
+            "vi": "\u0110\u00e3 ho\u00e0n th\u00e0nh"
           },
           "actionLabel": {
             "en": "View project",
-            "vi": "Xem dự án"
+            "vi": "Xem d\u1ef1 \u00e1n"
           },
           "href": "writing.html?slug=the-first-line-of-code-that-looked-at-the-sun",
           "albumId": "solar-tracker-circuit-2021"
@@ -601,20 +653,20 @@ window.PORTFOLIO_CONFIG = {
           "id": "ai-assisted-pedagogy",
           "title": {
             "en": "AI-Assisted Programming Pedagogy & Question Construction",
-            "vi": "Phương Pháp Học Lập Trình Cùng AI & Khung Đặt Câu Hỏi Đa Tầng"
+            "vi": "Ph\u01b0\u01a1ng Ph\u00e1p H\u1ecdc L\u1eadp Tr\u00ecnh C\u00f9ng AI & Khung \u0110\u1eb7t C\u00e2u H\u1ecfi \u0110a T\u1ea7ng"
           },
           "problem": {
             "en": "Guiding novice programmers through structured boundary definition and problem decomposition rather than passive copy-pasting.",
-            "vi": "Giúp người mới học lập trình biết phân rã bài toán và tư duy biên giới hạn thay vì sao chép thụ động."
+            "vi": "Gi\u00fap ng\u01b0\u1eddi m\u1edbi h\u1ecdc l\u1eadp tr\u00ecnh bi\u1ebft ph\u00e2n r\u00e3 b\u00e0i to\u00e1n v\u00e0 t\u01b0 duy bi\u00ean gi\u1edbi h\u1ea1n thay v\u00ec sao ch\u00e9p th\u1ee5 \u0111\u1ed9ng."
           },
           "status": "in-progress",
           "statusLabel": {
             "en": "In progress",
-            "vi": "Đang thực hiện"
+            "vi": "\u0110ang th\u1ef1c hi\u1ec7n"
           },
           "actionLabel": {
             "en": "Read research notes",
-            "vi": "Đọc ghi chép nghiên cứu"
+            "vi": "\u0110\u1ecdc ghi ch\u00e9p nghi\u00ean c\u1ee9u"
           },
           "href": "writing.html?slug=rough-drafts-in-the-age-of-ai",
           "albumId": "focumia-architecture-2025"
@@ -623,20 +675,20 @@ window.PORTFOLIO_CONFIG = {
           "id": "uit-ai-studies",
           "title": {
             "en": "Formal AI Studies & Long-term Systemic Memory",
-            "vi": "Nghiên cứu AI Chính quy & Trí nhớ Hệ thống Dài hạn"
+            "vi": "Nghi\u00ean c\u1ee9u AI Ch\u00ednh quy & Tr\u00ed nh\u1edb H\u1ec7 th\u1ed1ng D\u00e0i h\u1ea1n"
           },
           "problem": {
             "en": "Investigating neural memory persistence, cognitive assistance, and human-in-the-loop developer workflows at UIT, VNU-HCM.",
-            "vi": "Khảo sát cơ chế ghi nhớ dài hạn của mô hình, sự hỗ trợ nhận thức và tương tác người–máy tại UIT, ĐHQG-HCM."
+            "vi": "Kh\u1ea3o s\u00e1t c\u01a1 ch\u1ebf ghi nh\u1edb d\u00e0i h\u1ea1n c\u1ee7a m\u00f4 h\u00ecnh, s\u1ef1 h\u1ed7 tr\u1ee3 nh\u1eadn th\u1ee9c v\u00e0 t\u01b0\u01a1ng t\u00e1c ng\u01b0\u1eddi\u2013m\u00e1y t\u1ea1i UIT, \u0110HQG-HCM."
           },
           "status": "in-progress",
           "statusLabel": {
             "en": "In progress",
-            "vi": "Đang thực hiện"
+            "vi": "\u0110ang th\u1ef1c hi\u1ec7n"
           },
           "actionLabel": {
             "en": "Read research notes",
-            "vi": "Đọc ghi chép nghiên cứu"
+            "vi": "\u0110\u1ecdc ghi ch\u00e9p nghi\u00ean c\u1ee9u"
           },
           "href": "writing.html?slug=what-should-ai-remember-about-a-person",
           "albumId": "uit-ai-matriculation-2026"
@@ -646,20 +698,20 @@ window.PORTFOLIO_CONFIG = {
         {
           "id": "national-children-forum-2019",
           "title": {
-            "en": "Youth Advocacy & 6th National Children’s Forum",
-            "vi": "Đại diện Tiếng nói Trẻ em & Diễn đàn Trẻ em Quốc gia 2019"
+            "en": "Youth Advocacy & 6th National Children\u2019s Forum",
+            "vi": "\u0110\u1ea1i di\u1ec7n Ti\u1ebfng n\u00f3i Tr\u1ebb em & Di\u1ec5n \u0111\u00e0n Tr\u1ebb em Qu\u1ed1c gia 2019"
           },
           "narrative": {
             "en": "Stepping out with an empty suitcase that became filled with indelible memories. Standing before adults, UNICEF specialists, and policymakers in Hanoi to speak on family fragility and the unvoiced pain of children.",
-            "vi": "Bước chân ra Hà Nội với chiếc vali rỗng nhưng đong đầy ký ức. Lần đầu tiên đứng trước người lớn, chuyên gia UNICEF và các nhà làm chính sách để nói về vết rạn gia đình và tiếng nói cần được chở che của trẻ em."
+            "vi": "B\u01b0\u1edbc ch\u00e2n ra H\u00e0 N\u1ed9i v\u1edbi chi\u1ebfc vali r\u1ed7ng nh\u01b0ng \u0111ong \u0111\u1ea7y k\u00fd \u1ee9c. L\u1ea7n \u0111\u1ea7u ti\u00ean \u0111\u1ee9ng tr\u01b0\u1edbc ng\u01b0\u1eddi l\u1edbn, chuy\u00ean gia UNICEF v\u00e0 c\u00e1c nh\u00e0 l\u00e0m ch\u00ednh s\u00e1ch \u0111\u1ec3 n\u00f3i v\u1ec1 v\u1ebft r\u1ea1n gia \u0111\u00ecnh v\u00e0 ti\u1ebfng n\u00f3i c\u1ea7n \u0111\u01b0\u1ee3c ch\u1edf che c\u1ee7a tr\u1ebb em."
           },
           "tag": {
-            "en": "Hanoi · August 2019",
-            "vi": "Hà Nội · Tháng 8/2019"
+            "en": "Hanoi \u00b7 August 2019",
+            "vi": "H\u00e0 N\u1ed9i \u00b7 Th\u00e1ng 8/2019"
           },
           "actionLabel": {
             "en": "Read personal story",
-            "vi": "Đọc câu chuyện"
+            "vi": "\u0110\u1ecdc c\u00e2u chuy\u1ec7n"
           },
           "href": "writing.html?slug=childrens-forum",
           "albumId": "national-children-forum-2019"
@@ -668,19 +720,19 @@ window.PORTFOLIO_CONFIG = {
           "id": "boarding-school-curfew-study-2022-2023",
           "title": {
             "en": "Self-Directed Mathematical AI Studies Under Dormitory Curfew",
-            "vi": "Tự Học Toán & Nền Tảng AI Trong Ký Túc Xá Giờ Giới Nghiêm"
+            "vi": "T\u1ef1 H\u1ecdc To\u00e1n & N\u1ec1n T\u1ea3ng AI Trong K\u00fd T\u00fac X\u00e1 Gi\u1edd Gi\u1edbi Nghi\u00eam"
           },
           "narrative": {
             "en": "Working through linear algebra, weight tensors, and manual algorithmic dry-runs on physical lined paper when electricity was cut and battery drained. Quiet discipline forged in pitch darkness.",
-            "vi": "Giải tích ma trận, tensor trọng số và tự chạy tay từng bước thuật toán trên giấy tập khi ký túc xá cúp điện và cạn kiệt pin. Nơi sự tĩnh lặng và tính kiên định được mài giũa."
+            "vi": "Gi\u1ea3i t\u00edch ma tr\u1eadn, tensor tr\u1ecdng s\u1ed1 v\u00e0 t\u1ef1 ch\u1ea1y tay t\u1eebng b\u01b0\u1edbc thu\u1eadt to\u00e1n tr\u00ean gi\u1ea5y t\u1eadp khi k\u00fd t\u00fac x\u00e1 c\u00fap \u0111i\u1ec7n v\u00e0 c\u1ea1n ki\u1ec7t pin. N\u01a1i s\u1ef1 t\u0129nh l\u1eb7ng v\u00e0 t\u00ednh ki\u00ean \u0111\u1ecbnh \u0111\u01b0\u1ee3c m\u00e0i gi\u0169a."
           },
           "tag": {
-            "en": "Boarding School · 2022–2023",
-            "vi": "Ký túc xá · 2022–2023"
+            "en": "Boarding School \u00b7 2022\u20132023",
+            "vi": "K\u00fd t\u00fac x\u00e1 \u00b7 2022\u20132023"
           },
           "actionLabel": {
             "en": "Read personal story",
-            "vi": "Đọc câu chuyện"
+            "vi": "\u0110\u1ecdc c\u00e2u chuy\u1ec7n"
           },
           "href": "writing.html?slug=learning-ai-at-boarding-school",
           "albumId": "boarding-school-curfew-study-2022-2023"
@@ -689,19 +741,19 @@ window.PORTFOLIO_CONFIG = {
           "id": "physics-award-to-ai-pivot-2025",
           "title": {
             "en": "City-Level Physics Award & Pivoting Toward AI",
-            "vi": "Giải Nhì Vật Lý Thành Phố & Bước Rẽ Sang Trí Tuệ Nhân Tạo"
+            "vi": "Gi\u1ea3i Nh\u00ec V\u1eadt L\u00fd Th\u00e0nh Ph\u1ed1 & B\u01b0\u1edbc R\u1ebd Sang Tr\u00ed Tu\u1ec7 Nh\u00e2n T\u1ea1o"
           },
           "narrative": {
             "en": "Winning the city-level second prize in physics and confronting a defining dilemma: whether to pursue experimental physics or channel mathematical rigor into cognitive computational intelligence.",
-            "vi": "Đạt Giải Nhì học sinh giỏi Vật lý cấp thành phố và câu hỏi bước ngoặt: tiếp tục với vật lý thực nghiệm hay chuyển toàn bộ tư duy toán học sang xây dựng các hệ thống trí tuệ nhân tạo."
+            "vi": "\u0110\u1ea1t Gi\u1ea3i Nh\u00ec h\u1ecdc sinh gi\u1ecfi V\u1eadt l\u00fd c\u1ea5p th\u00e0nh ph\u1ed1 v\u00e0 c\u00e2u h\u1ecfi b\u01b0\u1edbc ngo\u1eb7t: ti\u1ebfp t\u1ee5c v\u1edbi v\u1eadt l\u00fd th\u1ef1c nghi\u1ec7m hay chuy\u1ec3n to\u00e0n b\u1ed9 t\u01b0 duy to\u00e1n h\u1ecdc sang x\u00e2y d\u1ef1ng c\u00e1c h\u1ec7 th\u1ed1ng tr\u00ed tu\u1ec7 nh\u00e2n t\u1ea1o."
           },
           "tag": {
-            "en": "Milestone · 2025",
-            "vi": "Dấu mốc · 2025"
+            "en": "Milestone \u00b7 2025",
+            "vi": "D\u1ea5u m\u1ed1c \u00b7 2025"
           },
           "actionLabel": {
             "en": "Read personal story",
-            "vi": "Đọc câu chuyện"
+            "vi": "\u0110\u1ecdc c\u00e2u chuy\u1ec7n"
           },
           "href": "writing.html?slug=second-prize-in-physics-and-why-i-still-chose-ai",
           "albumId": "physics-award-to-ai-pivot-2025"
@@ -710,30 +762,30 @@ window.PORTFOLIO_CONFIG = {
           "id": "uit-matriculation-memory-2026",
           "title": {
             "en": "Stepping Through the Gates: AI Student at UIT",
-            "vi": "Ngày Trở Thành Sinh Viên Trí Tuệ Nhân Tạo tại UIT"
+            "vi": "Ng\u00e0y Tr\u1edf Th\u00e0nh Sinh Vi\u00ean Tr\u00ed Tu\u1ec7 Nh\u00e2n T\u1ea1o t\u1ea1i UIT"
           },
           "narrative": {
             "en": "Crossing the threshold of University of Information Technology (VNU-HCM). Embarking on formal AI research into cognitive persistence, long-term memory, and human-in-the-loop engineering.",
-            "vi": "Chính thức bước qua cổng Trường Đại học Công nghệ Thông tin (ĐHQG TP.HCM). Bắt đầu hành trình nghiên cứu AI chính quy về trí nhớ máy học dài hạn và tương tác người–máy."
+            "vi": "Ch\u00ednh th\u1ee9c b\u01b0\u1edbc qua c\u1ed5ng Tr\u01b0\u1eddng \u0110\u1ea1i h\u1ecdc C\u00f4ng ngh\u1ec7 Th\u00f4ng tin (\u0110HQG TP.HCM). B\u1eaft \u0111\u1ea7u h\u00e0nh tr\u00ecnh nghi\u00ean c\u1ee9u AI ch\u00ednh quy v\u1ec1 tr\u00ed nh\u1edb m\u00e1y h\u1ecdc d\u00e0i h\u1ea1n v\u00e0 t\u01b0\u01a1ng t\u00e1c ng\u01b0\u1eddi\u2013m\u00e1y."
           },
           "tag": {
-            "en": "UIT, VNU-HCM · 2026",
-            "vi": "UIT, ĐHQG-HCM · 2026"
+            "en": "UIT, VNU-HCM \u00b7 2026",
+            "vi": "UIT, \u0110HQG-HCM \u00b7 2026"
           },
           "actionLabel": {
             "en": "Read personal story",
-            "vi": "Đọc câu chuyện"
+            "vi": "\u0110\u1ecdc c\u00e2u chuy\u1ec7n"
           },
           "href": "writing.html?slug=the-day-i-became-an-ai-student-at-uit",
           "albumId": "uit-first-days-memory-2026"
         }
       ],
       "sectionTitle": {
-        "vi": "Sổ tay & Bộ tư liệu",
+        "vi": "S\u1ed5 tay & B\u1ed9 t\u01b0 li\u1ec7u",
         "en": "Notebooks & Albums"
       },
       "sectionSubtitle": {
-        "vi": "Những cuốn logbook scan, bản nháp nghiên cứu, hình ảnh thử nghiệm và trang sổ tay lưu giữ suy nghĩ cá nhân.",
+        "vi": "Nh\u1eefng cu\u1ed1n logbook scan, b\u1ea3n nh\u00e1p nghi\u00ean c\u1ee9u, h\u00ecnh \u1ea3nh th\u1eed nghi\u1ec7m v\u00e0 trang s\u1ed5 tay l\u01b0u gi\u1eef suy ngh\u0129 c\u00e1 nh\u00e2n.",
         "en": "Scanned logbooks, drafts, experimental photos, and field notes."
       },
       "albums": [],
@@ -758,7 +810,7 @@ window.PORTFOLIO_CONFIG = {
       },
       "vi": {
         "label": "VN",
-        "name": "Tiếng Việt"
+        "name": "Ti\u1ebfng Vi\u1ec7t"
       }
     },
     "copy": {
@@ -775,7 +827,7 @@ window.PORTFOLIO_CONFIG = {
         "languageLabel": "Writing language",
         "adjacentLabel": "Adjacent logbooks",
         "readingTime": "min read",
-        "archiveLabel": "logbooks · 2019-2026",
+        "archiveLabel": "logbooks \u00b7 2019-2026",
         "emptyArchive": "No logbooks found.",
         "markdownUnavailable": "Markdown renderer is unavailable.",
         "interestsTitle": "Research interests & open questions",
@@ -785,8 +837,8 @@ window.PORTFOLIO_CONFIG = {
         "albumLogbooksOverline": "Documentation & Visual Archive",
         "albumLogbooksSubtitle": "Scanned logbooks, drafts, experimental photos, and field notes.",
         "bottomWritingHeading": "Shared Field Notes & Logbooks",
-        "searchPlaceholder": "Search notes by title, thought, or keyword…",
-        "searchAlbumsPlaceholder": "Filter notebooks by name or concept…",
+        "searchPlaceholder": "Search notes by title, thought, or keyword\u2026",
+        "searchAlbumsPlaceholder": "Filter notebooks by name or concept\u2026",
         "allCategories": "All Categories",
         "filterAll": "All",
         "filterNotebooks": "Notebooks",
@@ -815,56 +867,56 @@ window.PORTFOLIO_CONFIG = {
         "unpublishedBadge": "Unpublished"
       },
       "vi": {
-        "back": "Tất cả bài viết",
-        "read": "Đọc logbook",
-        "end": "Hết logbook",
-        "discuss": "Trao đổi về bài viết",
-        "previous": "Bài trước",
-        "next": "Bài tiếp",
-        "missingTitle": "Không tìm thấy bài viết.",
-        "missingText": "Bài viết bạn tìm có thể đã được chuyển hoặc chưa nằm trong kho lưu trữ.",
-        "writingOverline": "Bài viết & Nghiên cứu",
-        "languageLabel": "Ngôn ngữ bài viết",
-        "adjacentLabel": "Các logbook liền kề",
-        "readingTime": "phút đọc",
-        "archiveLabel": "logbook · 2019-2026",
-        "emptyArchive": "Không tìm thấy bài viết nào.",
-        "markdownUnavailable": "Không thể tải trình hiển thị Markdown.",
-        "interestsTitle": "Chủ đề & câu hỏi đang tìm hiểu",
-        "explorationsTitle": "Dự án & Hướng tìm hiểu",
-        "explorationsSubtitle": "Các dự án thực tế, triển khai mã nguồn và hướng tìm hiểu đang phát triển.",
-        "albumLogbooksTitle": "Sổ tay & Bộ tư liệu",
-        "albumLogbooksOverline": "Tư liệu & Sổ tay thực địa",
-        "albumLogbooksSubtitle": "Những cuốn logbook scan, bản nháp nghiên cứu, hình ảnh thử nghiệm và trang sổ tay lưu giữ suy nghĩ cá nhân.",
+        "back": "T\u1ea5t c\u1ea3 b\u00e0i vi\u1ebft",
+        "read": "\u0110\u1ecdc logbook",
+        "end": "H\u1ebft logbook",
+        "discuss": "Trao \u0111\u1ed5i v\u1ec1 b\u00e0i vi\u1ebft",
+        "previous": "B\u00e0i tr\u01b0\u1edbc",
+        "next": "B\u00e0i ti\u1ebfp",
+        "missingTitle": "Kh\u00f4ng t\u00ecm th\u1ea5y b\u00e0i vi\u1ebft.",
+        "missingText": "B\u00e0i vi\u1ebft b\u1ea1n t\u00ecm c\u00f3 th\u1ec3 \u0111\u00e3 \u0111\u01b0\u1ee3c chuy\u1ec3n ho\u1eb7c ch\u01b0a n\u1eb1m trong kho l\u01b0u tr\u1eef.",
+        "writingOverline": "B\u00e0i vi\u1ebft & Nghi\u00ean c\u1ee9u",
+        "languageLabel": "Ng\u00f4n ng\u1eef b\u00e0i vi\u1ebft",
+        "adjacentLabel": "C\u00e1c logbook li\u1ec1n k\u1ec1",
+        "readingTime": "ph\u00fat \u0111\u1ecdc",
+        "archiveLabel": "logbook \u00b7 2019-2026",
+        "emptyArchive": "Kh\u00f4ng t\u00ecm th\u1ea5y b\u00e0i vi\u1ebft n\u00e0o.",
+        "markdownUnavailable": "Kh\u00f4ng th\u1ec3 t\u1ea3i tr\u00ecnh hi\u1ec3n th\u1ecb Markdown.",
+        "interestsTitle": "Ch\u1ee7 \u0111\u1ec1 & c\u00e2u h\u1ecfi \u0111ang t\u00ecm hi\u1ec3u",
+        "explorationsTitle": "D\u1ef1 \u00e1n & H\u01b0\u1edbng t\u00ecm hi\u1ec3u",
+        "explorationsSubtitle": "C\u00e1c d\u1ef1 \u00e1n th\u1ef1c t\u1ebf, tri\u1ec3n khai m\u00e3 ngu\u1ed3n v\u00e0 h\u01b0\u1edbng t\u00ecm hi\u1ec3u \u0111ang ph\u00e1t tri\u1ec3n.",
+        "albumLogbooksTitle": "S\u1ed5 tay & B\u1ed9 t\u01b0 li\u1ec7u",
+        "albumLogbooksOverline": "T\u01b0 li\u1ec7u & S\u1ed5 tay th\u1ef1c \u0111\u1ecba",
+        "albumLogbooksSubtitle": "Nh\u1eefng cu\u1ed1n logbook scan, b\u1ea3n nh\u00e1p nghi\u00ean c\u1ee9u, h\u00ecnh \u1ea3nh th\u1eed nghi\u1ec7m v\u00e0 trang s\u1ed5 tay l\u01b0u gi\u1eef suy ngh\u0129 c\u00e1 nh\u00e2n.",
         "bottomWritingHeading": "Shared Field Notes & Logbooks",
-        "searchPlaceholder": "Tìm kiếm logbook theo tiêu đề, suy nghĩ, từ khóa…",
-        "searchAlbumsPlaceholder": "Tìm sổ tay theo tên, từ khóa…",
-        "allCategories": "Tất cả chủ đề",
-        "filterAll": "Tất cả",
-        "filterNotebooks": "Sổ tay",
-        "filterDrafts": "Bản nháp",
-        "filterPhotos": "Bộ ảnh",
+        "searchPlaceholder": "T\u00ecm ki\u1ebfm logbook theo ti\u00eau \u0111\u1ec1, suy ngh\u0129, t\u1eeb kh\u00f3a\u2026",
+        "searchAlbumsPlaceholder": "T\u00ecm s\u1ed5 tay theo t\u00ean, t\u1eeb kh\u00f3a\u2026",
+        "allCategories": "T\u1ea5t c\u1ea3 ch\u1ee7 \u0111\u1ec1",
+        "filterAll": "T\u1ea5t c\u1ea3",
+        "filterNotebooks": "S\u1ed5 tay",
+        "filterDrafts": "B\u1ea3n nh\u00e1p",
+        "filterPhotos": "B\u1ed9 \u1ea3nh",
         "openAlbum": "Xem album",
-        "closeAlbum": "Đóng album",
-        "backToAlbums": "Quay lại danh sách",
+        "closeAlbum": "\u0110\u00f3ng album",
+        "backToAlbums": "Quay l\u1ea1i danh s\u00e1ch",
         "pagesLabel": "trang",
-        "photosLabel": "ảnh",
+        "photosLabel": "\u1ea3nh",
         "pageCounter": "Trang",
         "ofLabel": "/",
-        "pagePrev": "Trang trước",
-        "pageNext": "Trang tiếp",
-        "viewThumbnails": "Mục lục trang",
-        "readMode": "Đọc cuộn dọc",
-        "flipMode": "Lật từng trang",
-        "readTranscription": "Xem bản chép lại",
-        "hideTranscription": "Ẩn bản chép lại",
-        "whatStayedLabel": "Điều còn đọng lại",
-        "reflectionLabel": "Đoạn suy ngẫm",
-        "connectedWritingLabel": "Bài viết liên quan",
-        "zoomImage": "Phóng to ảnh",
-        "closeZoom": "Đóng (Esc)",
-        "draftVersionLabel": "Bản nháp",
-        "unpublishedBadge": "Chưa công khai"
+        "pagePrev": "Trang tr\u01b0\u1edbc",
+        "pageNext": "Trang ti\u1ebfp",
+        "viewThumbnails": "M\u1ee5c l\u1ee5c trang",
+        "readMode": "\u0110\u1ecdc cu\u1ed9n d\u1ecdc",
+        "flipMode": "L\u1eadt t\u1eebng trang",
+        "readTranscription": "Xem b\u1ea3n ch\u00e9p l\u1ea1i",
+        "hideTranscription": "\u1ea8n b\u1ea3n ch\u00e9p l\u1ea1i",
+        "whatStayedLabel": "\u0110i\u1ec1u c\u00f2n \u0111\u1ecdng l\u1ea1i",
+        "reflectionLabel": "\u0110o\u1ea1n suy ng\u1eabm",
+        "connectedWritingLabel": "B\u00e0i vi\u1ebft li\u00ean quan",
+        "zoomImage": "Ph\u00f3ng to \u1ea3nh",
+        "closeZoom": "\u0110\u00f3ng (Esc)",
+        "draftVersionLabel": "B\u1ea3n nh\u00e1p",
+        "unpublishedBadge": "Ch\u01b0a c\u00f4ng khai"
       }
     }
   },
@@ -876,7 +928,7 @@ window.PORTFOLIO_CONFIG = {
       "updatedAt": "2026-10-09",
       "thought": {
         "en": "Early questions on youth representation, social listening, and institutional accountability.",
-        "vi": "Những câu hỏi đầu tiên về tiếng nói của người trẻ và sự công bằng."
+        "vi": "Nh\u1eefng c\u00e2u h\u1ecfi \u0111\u1ea7u ti\u00ean v\u1ec1 ti\u1ebfng n\u00f3i c\u1ee7a ng\u01b0\u1eddi tr\u1ebb v\u00e0 s\u1ef1 c\u00f4ng b\u1eb1ng."
       },
       "sources": {
         "en": "writings/01-childrens-forum.en.md",
@@ -884,7 +936,7 @@ window.PORTFOLIO_CONFIG = {
       },
       "category": {
         "en": "Society & Childhood",
-        "vi": "Xã hội & Tuổi thơ"
+        "vi": "X\u00e3 h\u1ed9i & Tu\u1ed5i th\u01a1"
       }
     },
     {
@@ -894,7 +946,7 @@ window.PORTFOLIO_CONFIG = {
       "updatedAt": "2026-10-09",
       "thought": {
         "en": "The first line of code driving photoresistors to follow the solar trajectory.",
-        "vi": "Dòng lệnh đầu tiên điều khiển cảm biến quang trở theo dõi mặt trời."
+        "vi": "D\u00f2ng l\u1ec7nh \u0111\u1ea7u ti\u00ean \u0111i\u1ec1u khi\u1ec3n c\u1ea3m bi\u1ebfn quang tr\u1edf theo d\u00f5i m\u1eb7t tr\u1eddi."
       },
       "sources": {
         "en": "writings/02-the-first-line-of-code-that-looked-at-the-sun.en.md",
@@ -902,7 +954,7 @@ window.PORTFOLIO_CONFIG = {
       },
       "category": {
         "en": "Computing & Physics",
-        "vi": "Lập trình & Vật lý"
+        "vi": "L\u1eadp tr\u00ecnh & V\u1eadt l\u00fd"
       }
     },
     {
@@ -912,7 +964,7 @@ window.PORTFOLIO_CONFIG = {
       "updatedAt": "2026-10-09",
       "thought": {
         "en": "Self-studying neural networks inside the dormitory during intermittent connectivity.",
-        "vi": "Tự học mạng neural trong ký túc xá khi không có internet liên tục."
+        "vi": "T\u1ef1 h\u1ecdc m\u1ea1ng neural trong k\u00fd t\u00fac x\u00e1 khi kh\u00f4ng c\u00f3 internet li\u00ean t\u1ee5c."
       },
       "sources": {
         "en": "writings/03-learning-ai-at-boarding-school.en.md",
@@ -920,7 +972,7 @@ window.PORTFOLIO_CONFIG = {
       },
       "category": {
         "en": "Learning & AI",
-        "vi": "Học tập & AI"
+        "vi": "H\u1ecdc t\u1eadp & AI"
       }
     },
     {
@@ -930,15 +982,15 @@ window.PORTFOLIO_CONFIG = {
       "updatedAt": "2026-10-09",
       "thought": {
         "en": "Cognitive reliance on AI and the realization that automating thought impairs reasoning.",
-        "vi": "Sự phụ thuộc vào AI và khoảnh khắc nhận ra ta đang từ bỏ tư duy."
+        "vi": "S\u1ef1 ph\u1ee5 thu\u1ed9c v\u00e0o AI v\u00e0 kho\u1ea3nh kh\u1eafc nh\u1eadn ra ta \u0111ang t\u1eeb b\u1ecf t\u01b0 duy."
       },
       "sources": {
         "en": "writings/04-i-used-ai-so-i-would-not-have-to-think.en.md",
         "vi": "writings/04-i-used-ai-so-i-would-not-have-to-think.vi.md"
       },
       "category": {
-        "en": "Human–AI Practice",
-        "vi": "Thực hành Human–AI"
+        "en": "Human\u2013AI Practice",
+        "vi": "Th\u1ef1c h\u00e0nh Human\u2013AI"
       }
     },
     {
@@ -948,7 +1000,7 @@ window.PORTFOLIO_CONFIG = {
       "updatedAt": "2026-10-09",
       "thought": {
         "en": "Deconstructing forward pass, weight matrices, and backpropagation from first principles.",
-        "vi": "Bóc tách forward pass, ma trận trọng số và lan truyền ngược từ gốc rễ."
+        "vi": "B\u00f3c t\u00e1ch forward pass, ma tr\u1eadn tr\u1ecdng s\u1ed1 v\u00e0 lan truy\u1ec1n ng\u01b0\u1ee3c t\u1eeb g\u1ed1c r\u1ec5."
       },
       "sources": {
         "en": "writings/05-what-is-happening-inside-a-neural-network.en.md",
@@ -956,7 +1008,7 @@ window.PORTFOLIO_CONFIG = {
       },
       "category": {
         "en": "Neural Networks",
-        "vi": "Mạng neural"
+        "vi": "M\u1ea1ng neural"
       }
     },
     {
@@ -966,7 +1018,7 @@ window.PORTFOLIO_CONFIG = {
       "updatedAt": "2026-10-09",
       "thought": {
         "en": "The ambition to run and fine-tune large language models on an 8GB RAM laptop.",
-        "vi": "Ước mơ chạy và tinh chỉnh mô hình ngôn ngữ lớn trên chiếc laptop 8GB RAM."
+        "vi": "\u01af\u1edbc m\u01a1 ch\u1ea1y v\u00e0 tinh ch\u1ec9nh m\u00f4 h\u00ecnh ng\u00f4n ng\u1eef l\u1edbn tr\u00ean chi\u1ebfc laptop 8GB RAM."
       },
       "sources": {
         "en": "writings/06-8gb-of-ram-and-the-dream-of-optimizing-llms.en.md",
@@ -974,7 +1026,7 @@ window.PORTFOLIO_CONFIG = {
       },
       "category": {
         "en": "LLM Systems",
-        "vi": "Hệ thống LLM"
+        "vi": "H\u1ec7 th\u1ed1ng LLM"
       }
     },
     {
@@ -984,7 +1036,7 @@ window.PORTFOLIO_CONFIG = {
       "updatedAt": "2026-10-09",
       "thought": {
         "en": "Architecting a personal productivity app tailored to sustain deep human focus.",
-        "vi": "Thiết kế ứng dụng năng suất phục vụ chính sự tập trung của bản thân."
+        "vi": "Thi\u1ebft k\u1ebf \u1ee9ng d\u1ee5ng n\u0103ng su\u1ea5t ph\u1ee5c v\u1ee5 ch\u00ednh s\u1ef1 t\u1eadp trung c\u1ee7a b\u1ea3n th\u00e2n."
       },
       "sources": {
         "en": "writings/07-focumia-i-built-a-productivity-app.en.md",
@@ -992,7 +1044,7 @@ window.PORTFOLIO_CONFIG = {
       },
       "category": {
         "en": "Product Design",
-        "vi": "Thiết kế sản phẩm"
+        "vi": "Thi\u1ebft k\u1ebf s\u1ea3n ph\u1ea9m"
       }
     },
     {
@@ -1002,7 +1054,7 @@ window.PORTFOLIO_CONFIG = {
       "updatedAt": "2026-10-09",
       "thought": {
         "en": "Treating personal learning as an operating system with continuous feedback loops.",
-        "vi": "Xem việc học như một hệ điều hành với vòng lặp phản hồi liên tục."
+        "vi": "Xem vi\u1ec7c h\u1ecdc nh\u01b0 m\u1ed9t h\u1ec7 \u0111i\u1ec1u h\u00e0nh v\u1edbi v\u00f2ng l\u1eb7p ph\u1ea3n h\u1ed3i li\u00ean t\u1ee5c."
       },
       "sources": {
         "en": "writings/08-dailynox-and-learning-as-an-operating-system.en.md",
@@ -1010,7 +1062,7 @@ window.PORTFOLIO_CONFIG = {
       },
       "category": {
         "en": "Learning Systems",
-        "vi": "Hệ thống học tập"
+        "vi": "H\u1ec7 th\u1ed1ng h\u1ecdc t\u1eadp"
       }
     },
     {
@@ -1020,7 +1072,7 @@ window.PORTFOLIO_CONFIG = {
       "updatedAt": "2026-10-09",
       "thought": {
         "en": "City-level second prize in Physics and why I pivoted toward Artificial Intelligence.",
-        "vi": "Giải Nhì Vật lý cấp thành phố và lý do tôi rẽ hướng sang AI."
+        "vi": "Gi\u1ea3i Nh\u00ec V\u1eadt l\u00fd c\u1ea5p th\u00e0nh ph\u1ed1 v\u00e0 l\u00fd do t\u00f4i r\u1ebd h\u01b0\u1edbng sang AI."
       },
       "sources": {
         "en": "writings/09-second-prize-in-physics-and-why-i-still-chose-ai.en.md",
@@ -1028,7 +1080,7 @@ window.PORTFOLIO_CONFIG = {
       },
       "category": {
         "en": "Physics & Direction",
-        "vi": "Vật lý & Lựa chọn"
+        "vi": "V\u1eadt l\u00fd & L\u1ef1a ch\u1ecdn"
       }
     },
     {
@@ -1038,7 +1090,7 @@ window.PORTFOLIO_CONFIG = {
       "updatedAt": "2026-10-09",
       "thought": {
         "en": "Statistical variance and the delicate boundary of fairness in academic evaluation.",
-        "vi": "Sự khác biệt thống kê và ranh giới của sự công bằng trong đánh giá."
+        "vi": "S\u1ef1 kh\u00e1c bi\u1ec7t th\u1ed1ng k\u00ea v\u00e0 ranh gi\u1edbi c\u1ee7a s\u1ef1 c\u00f4ng b\u1eb1ng trong \u0111\u00e1nh gi\u00e1."
       },
       "sources": {
         "en": "writings/10-an-outlier-is-not-evidence-of-cheating.en.md",
@@ -1046,7 +1098,7 @@ window.PORTFOLIO_CONFIG = {
       },
       "category": {
         "en": "Education & Fairness",
-        "vi": "Giáo dục & Công bằng"
+        "vi": "Gi\u00e1o d\u1ee5c & C\u00f4ng b\u1eb1ng"
       }
     },
     {
@@ -1056,7 +1108,7 @@ window.PORTFOLIO_CONFIG = {
       "updatedAt": "2026-10-09",
       "thought": {
         "en": "When an examination must be re-administered, how is trust in systemic fairness restored?",
-        "vi": "Khi một kỳ thi phải thi lại, niềm tin vào sự công bằng được hàn gắn ra sao?"
+        "vi": "Khi m\u1ed9t k\u1ef3 thi ph\u1ea3i thi l\u1ea1i, ni\u1ec1m tin v\u00e0o s\u1ef1 c\u00f4ng b\u1eb1ng \u0111\u01b0\u1ee3c h\u00e0n g\u1eafn ra sao?"
       },
       "sources": {
         "en": "writings/11-retaking-the-exam-can-we-retake-fairness.en.md",
@@ -1064,7 +1116,7 @@ window.PORTFOLIO_CONFIG = {
       },
       "category": {
         "en": "Education & Fairness",
-        "vi": "Giáo dục & Công bằng"
+        "vi": "Gi\u00e1o d\u1ee5c & C\u00f4ng b\u1eb1ng"
       }
     },
     {
@@ -1074,7 +1126,7 @@ window.PORTFOLIO_CONFIG = {
       "updatedAt": "2026-10-09",
       "thought": {
         "en": "The enduring value of imperfect rough drafts in an era of automated synthesis.",
-        "vi": "Giá trị của những bản nháp thô ráp trong thời đại sinh văn bản tự động."
+        "vi": "Gi\u00e1 tr\u1ecb c\u1ee7a nh\u1eefng b\u1ea3n nh\u00e1p th\u00f4 r\u00e1p trong th\u1eddi \u0111\u1ea1i sinh v\u0103n b\u1ea3n t\u1ef1 \u0111\u1ed9ng."
       },
       "sources": {
         "en": "writings/12-rough-drafts-in-the-age-of-ai.en.md",
@@ -1082,7 +1134,7 @@ window.PORTFOLIO_CONFIG = {
       },
       "category": {
         "en": "Writing & AI",
-        "vi": "Viết & AI"
+        "vi": "Vi\u1ebft & AI"
       }
     },
     {
@@ -1092,7 +1144,7 @@ window.PORTFOLIO_CONFIG = {
       "updatedAt": "2026-10-09",
       "thought": {
         "en": "Formally stepping through the gates as an AI student at UIT, VNU-HCM.",
-        "vi": "Ngày chính thức bước chân vào cánh cổng ngành AI tại UIT, ĐHQG-HCM."
+        "vi": "Ng\u00e0y ch\u00ednh th\u1ee9c b\u01b0\u1edbc ch\u00e2n v\u00e0o c\u00e1nh c\u1ed5ng ng\u00e0nh AI t\u1ea1i UIT, \u0110HQG-HCM."
       },
       "sources": {
         "en": "writings/13-the-day-i-became-an-ai-student-at-uit.en.md",
@@ -1100,7 +1152,7 @@ window.PORTFOLIO_CONFIG = {
       },
       "category": {
         "en": "Beginnings",
-        "vi": "Khởi đầu"
+        "vi": "Kh\u1edfi \u0111\u1ea7u"
       }
     },
     {
@@ -1110,7 +1162,7 @@ window.PORTFOLIO_CONFIG = {
       "updatedAt": "2026-10-09",
       "thought": {
         "en": "Studying AI yet diving into economics: constrained optimization and opportunity cost.",
-        "vi": "Học AI nhưng lại mở sách kinh tế học: bài toán tối ưu và chi phí cơ hội."
+        "vi": "H\u1ecdc AI nh\u01b0ng l\u1ea1i m\u1edf s\u00e1ch kinh t\u1ebf h\u1ecdc: b\u00e0i to\u00e1n t\u1ed1i \u01b0u v\u00e0 chi ph\u00ed c\u01a1 h\u1ed9i."
       },
       "sources": {
         "en": "writings/14-i-study-ai-so-why-am-i-opening-an-economics-textbook.en.md",
@@ -1118,7 +1170,7 @@ window.PORTFOLIO_CONFIG = {
       },
       "category": {
         "en": "AI & Economics",
-        "vi": "AI & Kinh tế"
+        "vi": "AI & Kinh t\u1ebf"
       }
     },
     {
@@ -1128,7 +1180,7 @@ window.PORTFOLIO_CONFIG = {
       "updatedAt": "2026-10-09",
       "thought": {
         "en": "A digital second brain must never displace the cognitive weight of the first.",
-        "vi": "Bộ não thứ hai (Second Brain) không bao giờ được phép thay thế bộ não thứ nhất."
+        "vi": "B\u1ed9 n\u00e3o th\u1ee9 hai (Second Brain) kh\u00f4ng bao gi\u1edd \u0111\u01b0\u1ee3c ph\u00e9p thay th\u1ebf b\u1ed9 n\u00e3o th\u1ee9 nh\u1ea5t."
       },
       "sources": {
         "en": "writings/15-neural-work-a-second-brain-must-not-replace-the-first.en.md",
@@ -1136,7 +1188,7 @@ window.PORTFOLIO_CONFIG = {
       },
       "category": {
         "en": "Knowledge Systems",
-        "vi": "Hệ thống tri thức"
+        "vi": "H\u1ec7 th\u1ed1ng tri th\u1ee9c"
       }
     },
     {
@@ -1146,7 +1198,7 @@ window.PORTFOLIO_CONFIG = {
       "updatedAt": "2026-10-09",
       "thought": {
         "en": "Long-term artificial memory: what machines should remember and what should be forgotten.",
-        "vi": "Trí nhớ dài hạn của AI và những điều máy móc nên hoặc không nên ghi nhớ về một con người."
+        "vi": "Tr\u00ed nh\u1edb d\u00e0i h\u1ea1n c\u1ee7a AI v\u00e0 nh\u1eefng \u0111i\u1ec1u m\u00e1y m\u00f3c n\u00ean ho\u1eb7c kh\u00f4ng n\u00ean ghi nh\u1edb v\u1ec1 m\u1ed9t con ng\u01b0\u1eddi."
       },
       "sources": {
         "en": "writings/16-what-should-ai-remember-about-a-person.en.md",
@@ -1154,7 +1206,7 @@ window.PORTFOLIO_CONFIG = {
       },
       "category": {
         "en": "Memory & AI",
-        "vi": "Trí nhớ & AI"
+        "vi": "Tr\u00ed nh\u1edb & AI"
       }
     }
   ]
