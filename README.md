@@ -1,4 +1,4 @@
-﻿# Developer and Researcher Portfolio Website
+# Developer and Researcher Portfolio Website
 
 > Official developer, researcher, and academic portfolio of Nhut Nguyen (@nhdnhut).
 > Standalone Zero-Dependency Architecture | Semantic HTML5 | Responsive CSS3 | Vanilla JavaScript | Markdown-Driven Articles | GitHub Pages Ready
@@ -30,28 +30,28 @@ All visible content, navigation links, and theme parameters are centrally govern
 
 ```text
 developer-portfolio/
-â”œâ”€â”€ config/
-â”‚   â”œâ”€â”€ portfolio.config.js        # Central content, projects, and metadata configuration
-â”‚   â””â”€â”€ generated/
-â”‚       â””â”€â”€ writing-content.js     # Bundled fallback for offline file-protocol browsing
-â”œâ”€â”€ css/
-â”‚   â””â”€â”€ styles.css                 # Typography, themes (light/dark), and responsive grid
-â”œâ”€â”€ js/
-â”‚   â”œâ”€â”€ site.js                    # Header, footer, theme toggler, and routing
-â”‚   â””â”€â”€ writings.js                # Dynamic Markdown fetcher and renderer
-â”œâ”€â”€ writings/                      # Bilingual Markdown articles (.en.md and .vi.md)
-â”œâ”€â”€ assets/                        # Profile imagery, icons, and document PDFs
-â”œâ”€â”€ vendor/                        # Lightweight local Markdown parser
-â”œâ”€â”€ index.html                     # Home / Biography
-â”œâ”€â”€ research.html                  # Research papers and academic projects
-â”œâ”€â”€ projects.html                  # Software systems and open-source tooling
-â”œâ”€â”€ books.html                     # Academic reading list
-â”œâ”€â”€ blog.html                      # Field notes archive
-â”œâ”€â”€ writing.html                   # Dynamic single-article viewer
-â”œâ”€â”€ activities.html                # Milestones timeline
-â”œâ”€â”€ library.html                   # Resource library
-â”œâ”€â”€ LICENSE                        # MIT License
-â””â”€â”€ README.md                      # Repository documentation
+├── config/
+│   ├── portfolio.config.js        # Central content, projects, and metadata configuration
+│   └── generated/
+│       └── writing-content.js     # Bundled fallback for offline file-protocol browsing
+├── css/
+│   └── styles.css                 # Typography, themes (light/dark), and responsive grid
+├── js/
+│   ├── site.js                    # Header, footer, theme toggler, and routing
+│   └── writings.js                # Dynamic Markdown fetcher and renderer
+├── writings/                      # Bilingual Markdown articles (.en.md and .vi.md)
+├── assets/                        # Profile imagery, icons, and document PDFs
+├── vendor/                        # Lightweight local Markdown parser
+├── index.html                     # Home / Biography
+├── research.html                  # Research papers and academic projects
+├── projects.html                  # Software systems and open-source tooling
+├── books.html                     # Academic reading list
+├── blog.html                      # Field notes archive
+├── writing.html                   # Dynamic single-article viewer
+├── activities.html                # Milestones timeline
+├── library.html                   # Resource library
+├── LICENSE                        # MIT License
+└── README.md                      # Repository documentation
 ```
 
 ---
