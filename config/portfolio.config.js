@@ -86,13 +86,13 @@ window.PORTFOLIO_CONFIG = {
   "profiles": [
     {
       "label": "GitHub",
-      "value": "@DangNhutNguyen",
-      "href": "https://github.com/DangNhutNguyen"
+      "value": "@nhutnhd",
+      "href": "https://github.com/nhutnhd"
     },
     {
       "label": "LinkedIn",
-      "value": "dangnhutnguyen",
-      "href": "https://www.linkedin.com/in/dangnhutnguyen/"
+      "value": "nhutnhd",
+      "href": "https://www.linkedin.com/in/nhutnhd/"
     },
     {
       "label": "ORCID",
@@ -148,7 +148,7 @@ window.PORTFOLIO_CONFIG = {
         },
         {
           "label": "GitHub",
-          "href": "https://github.com/DangNhutNguyen",
+          "href": "https://github.com/nhutnhd",
           "external": true
         }
       ]
@@ -190,8 +190,8 @@ window.PORTFOLIO_CONFIG = {
           "abstract": "Investigating neural network architectures directly from multivariable calculus and linear algebra primitives without black-box framework abstractions, observing gradient flows and weight interpretability.",
           "explanation": "Rather than treating neural nets as probabilistic black boxes, this work decomposes backpropagation into local gradient functions across high-dimensional manifolds, demonstrating how activation functions fold decision boundaries.",
           "paperUrl": "https://bit.ly/LogicPT-GT",
-          "codeUrl": "https://github.com/DangNhutNguyen/Neural-Network-from-Scratch",
-          "demoUrl": "https://github.com/DangNhutNguyen/MNIST-TRAINING",
+          "codeUrl": "https://github.com/nhutnhd/Neural-Network-from-Scratch",
+          "demoUrl": "https://github.com/nhutnhd/MNIST-TRAINING",
           "tags": [
             "First Principles",
             "Backpropagation",
@@ -214,8 +214,8 @@ window.PORTFOLIO_CONFIG = {
           "status": "Completed · Peer Verified",
           "abstract": "Coupling geometric optics, thermodynamics, and real-time dual-axis solar tracking algorithms using multidirectional photo-sensor arrays.",
           "explanation": "Applying differential calculus to optimize parabolic dual-curvature reflector tilt relative to apparent solar coordinates. Dual-axis tracking yielded a 38.4% thermal flux density gain over fixed collectors.",
-          "paperUrl": "https://bit.ly/SolarProject-dangnhutnguyen",
-          "codeUrl": "https://github.com/DangNhutNguyen",
+          "paperUrl": "https://bit.ly/SolarProject-nhutnhd",
+          "codeUrl": "https://github.com/nhutnhd",
           "demoUrl": "",
           "tags": [
             "Thermodynamics",
@@ -272,7 +272,7 @@ window.PORTFOLIO_CONFIG = {
             "Productivity systems",
             "Workflow design"
           ],
-          "link": "https://github.com/DangNhutNguyen/Focumia"
+          "link": "https://github.com/nhutnhd/Focumia"
         },
         {
           "year": "2025",
@@ -282,7 +282,7 @@ window.PORTFOLIO_CONFIG = {
             "Prompt engineering",
             "LLM tooling"
           ],
-          "link": "https://github.com/DangNhutNguyen/PrompTEA"
+          "link": "https://github.com/nhutnhd/PrompTEA"
         },
         {
           "year": "2024",
@@ -293,7 +293,7 @@ window.PORTFOLIO_CONFIG = {
             "Backpropagation",
             "Python"
           ],
-          "link": "https://github.com/DangNhutNguyen/Neural-Network-from-Scratch"
+          "link": "https://github.com/nhutnhd/Neural-Network-from-Scratch"
         },
         {
           "year": "2024",
@@ -303,7 +303,7 @@ window.PORTFOLIO_CONFIG = {
             "Computer vision",
             "Model optimization"
           ],
-          "link": "https://github.com/DangNhutNguyen/MNIST-TRAINING"
+          "link": "https://github.com/nhutnhd/MNIST-TRAINING"
         },
         {
           "year": "2024 -",
@@ -323,7 +323,7 @@ window.PORTFOLIO_CONFIG = {
             "Renewable energy",
             "Applied physics"
           ],
-          "link": "https://bit.ly/SolarProject-dangnhutnguyen"
+          "link": "https://bit.ly/SolarProject-nhutnhd"
         }
       ],
       "paperTitle": "Research papers",
@@ -351,7 +351,7 @@ window.PORTFOLIO_CONFIG = {
         },
         {
           "label": "GitHub",
-          "href": "https://github.com/DangNhutNguyen",
+          "href": "https://github.com/nhutnhd",
           "external": true
         }
       ]

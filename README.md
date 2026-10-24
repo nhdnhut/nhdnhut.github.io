@@ -1,122 +1,91 @@
-# Static portfolio
+# Developer and Researcher Portfolio Website
 
-This folder is a standalone HTML, CSS, and JavaScript edition of the portfolio.
-It does not require React, Next.js, Vinext, a package manager, or a build step.
+> Official developer, researcher, and academic portfolio of Nhut Nguyen (@nhutnhd).
+> Standalone Zero-Dependency Architecture | Semantic HTML5 | Responsive CSS3 | Vanilla JavaScript | Markdown-Driven Articles | GitHub Pages Ready
 
-Visible labels, ordering, page copy, projects, papers, books, and writing behavior
-are controlled by `config/portfolio.config.js`.
-All bilingual article text lives directly in the `writings/` folder as Markdown.
-The standalone renderer reads those files when served locally and uses the
-generated fallback when the HTML files are opened directly.
+[![GitHub Pages](https://img.shields.io/badge/Deployment-GitHub_Pages-222222?style=flat-square&logo=github&logoColor=white)](https://nhutnhd.github.io)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 
-## Preview locally
+---
 
-From this folder, run:
+## 1. Overview
 
-```bash
-python3 -m http.server 8080
-```
+This repository hosts the official personal website and academic archive of Nhut Nguyen (@nhutnhd), an Artificial Intelligence student and systems researcher at the University of Information Technology (UIT, VNU-HCM).
 
-Then open `http://localhost:8080/`.
+The site is built with a dependency-free, static-first architecture that runs out of the box on GitHub Pages without requiring a node build step, npm packages, or server runtimes.
 
-## Project structure
+Key Sections:
+- About: Academic background, research philosophy, and technical skills.
+- Works and Research: Empirical benchmarks, neural network optimizations, and publications.
+- Projects: Interactive applications, developer tools, and systems software.
+- Field Notes / Writing: Bilingual (English / Vietnamese) Markdown-rendered research notes and field essays.
+- Reading Archive: Curated library of foundational textbooks, notes, and technical literature.
+- Timeline: Verified academic and project milestones.
+
+---
+
+## 2. Architecture and Data Flow
+
+All visible content, navigation links, and theme parameters are centrally governed by `config/portfolio.config.js`:
 
 ```text
-html-css-js/
+developer-portfolio/
 ├── config/
-│   ├── portfolio.config.js        # edit all site content and UI labels here
-│   ├── README.md                  # configuration examples
+│   ├── portfolio.config.js        # Central content, projects, and metadata configuration
 │   └── generated/
-│       └── writing-content.js     # generated Markdown fallback; do not edit
+│       └── writing-content.js     # Bundled fallback for offline file-protocol browsing
 ├── css/
-│   └── styles.css                 # theme, layout, and responsive styles
+│   └── styles.css                 # Typography, themes (light/dark), and responsive grid
 ├── js/
-│   ├── site.js                    # shared page/header/footer renderer
-│   └── writings.js                # Markdown archive and article renderer
-├── writings/                      # paired English/Vietnamese Markdown articles
-├── assets/
-│   ├── books/                     # book PDFs
-│   │   └── covers/                # book cover images
-│   └── writings/                  # images used inside Markdown articles
-├── vendor/                        # local third-party Markdown renderer
-├── index.html                     # About
-├── research.html                  # Research
-├── projects.html                  # Projects + Research Papers
-├── books.html                     # Books
-├── blog.html                      # Writing archive
-├── writing.html                   # individual article
-├── activities.html                # Timeline
-├── library.html                   # Library
-├── papers.html                    # redirect to Works / Research Papers
-└── generate-writing-content.py    # rebuilds direct-file Markdown data
+│   ├── site.js                    # Header, footer, theme toggler, and routing
+│   └── writings.js                # Dynamic Markdown fetcher and renderer
+├── writings/                      # Bilingual Markdown articles (.en.md and .vi.md)
+├── assets/                        # Profile imagery, icons, and document PDFs
+├── vendor/                        # Lightweight local Markdown parser
+├── index.html                     # Home / Biography
+├── research.html                  # Research papers and academic projects
+├── projects.html                  # Software systems and open-source tooling
+├── books.html                     # Academic reading list
+├── blog.html                      # Field notes archive
+├── writing.html                   # Dynamic single-article viewer
+├── activities.html                # Milestones timeline
+├── library.html                   # Resource library
+├── LICENSE                        # MIT License
+└── README.md                      # Repository documentation
 ```
 
-## Pages and supporting files
+---
 
-- `index.html` - About
-- `research.html` - Research
-- `projects.html` - Works
-- `papers.html` - compatibility redirect to the Research Papers section in Works
-- `books.html` - Books written by Nguyễn Huỳnh Đăng Nhựt
-- `blog.html` - Writing
-- `writing.html` - individual writing/article view
-- `activities.html` - Timeline
-- `library.html` - Library
-- `writings/` - all article sources as paired `*.en.md` and `*.vi.md` files
-- `config/portfolio.config.js` - the single editable source for site content
-- `config/generated/writing-content.js` - generated fallback for direct file opening
-- `generate-writing-content.py` - builds that fallback from `writings/*.md`
-- `css/styles.css` - all responsive and theme styles
-- `js/site.js` - renders every page from the config and controls shared interactions
-- `js/writings.js` - writing index and article renderer
-- `vendor/marked.umd.js` - local Markdown renderer used by the standalone edition
-- `vendor/marked-LICENSE.md` - license notice for the bundled Markdown renderer
-- `assets/` - profile image, résumé, favicon, app icon, and social preview
-- `assets/books/` - book PDFs and their cover images
+## 3. Quick Start Guide
 
-## Update the portfolio
-
-Open `config/portfolio.config.js` and edit the relevant section. Detailed examples
-are in `config/README.md`.
-
-- `site` - name, education, email, profile image, web icon, résumé, and footer.
-- `ui` - shared button labels, loading text, units, accessibility text, and errors.
-- `navigation` - menu labels and order.
-- `profiles` - GitHub, LinkedIn, ORCID, or additional profiles.
-- `pages.about` - introduction and current focus.
-- `pages.research` - research questions and working method.
-- `pages.projects.items` - projects.
-- `pages.projects.papers` - papers and manuscripts shown below the projects.
-- `pages.books.items` - books, language labels, page counts, covers, and PDF files.
-- `pages.activities.items` - education, awards, and leadership.
-- `pages.library.items` - reading topics.
-- `writingOptions` - default language, EN/VN labels, and post-only language switching.
-- `writings` - writing order, URL slugs, Markdown source paths, and bilingual categories.
-
-## Add a writing
-
-Add the English and Vietnamese Markdown files directly to `writings/`, using the
-same base filename and the suffixes `.en.md` and `.vi.md`. Then add a new entry to
-the `writings` array in `config/portfolio.config.js`.
-
-When previewing through `python3 -m http.server 8080`, the browser reads the
-Markdown files directly. To also support opening `blog.html` or `writing.html`
-directly from the file system, refresh the Jekyll-like static bundle after editing:
+### Local Preview
+Serve the static files using Python's built-in HTTP server:
 
 ```bash
-python3 generate-writing-content.py
+python -m http.server 8080
 ```
 
-The article view supports Jekyll-style Markdown including headings, emphasis,
-links, lists, blockquotes, fenced code blocks, tables, task lists, images, and
-horizontal rules. Raw HTML is filtered before it reaches the page.
+Navigate to `http://localhost:8080` in your web browser.
 
-Each entry may include:
+### Direct File Protocol
+The repository includes an offline fallback bundle (`config/generated/writing-content.js`). You can double-click `index.html` to open and navigate the site locally without a running HTTP daemon.
 
-- `slug` for the article URL.
-- `index` for display order.
-- `sources.en` and `sources.vi` for the two Markdown file paths.
-- `category.en` and `category.vi` for the localized category label.
-- `translations` for optional per-language metadata overrides.
+---
 
-Put article images in `assets/writings/`. A more detailed example is included in that folder.
+## 4. Deployment to GitHub Pages
+
+1. Create a repository named `nhutnhd.github.io` on GitHub under account `@nhutnhd`.
+2. Push this repository to the `main` branch:
+   ```bash
+   git push -u origin main
+   ```
+3. In repository Settings -> Pages, ensure the source is set to "Deploy from a branch" (branch: `main`, folder: `/ (root)`).
+4. The site will be automatically published at `https://nhutnhd.github.io`.
+
+---
+
+## 5. Author and License
+
+- Author: Nguyen Huynh Dang Nhut (@nhutnhd)
+- Affiliation: University of Information Technology, VNU-HCM
+- License: MIT License (see [LICENSE](LICENSE))
