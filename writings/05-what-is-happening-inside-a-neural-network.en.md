@@ -104,3 +104,11 @@ A from-scratch project can easily breed the illusion that "I understand everythi
 3. **Monitor weight distributions:** Track gradient norms and activation histograms, not just the loss scalar.
 
 Building from scratch did not make frameworks less valuable—it taught me why they were designed that way, and when to look beneath the surface to optimize.
+
+
+---
+
+### Open-Source Implementation & Finite-Difference Verification
+
+The complete from-scratch NumPy implementation, analytical backpropagation, and finite-difference gradient checks ($\lt 10^{-6}$) are openly published at:
+- Official Repository: [GitHub: neural-network-from-scratch](https://github.com/nhdnhut/neural-network-from-scratch)

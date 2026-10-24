@@ -11,3 +11,8 @@ Mình không nghĩ sự vật lộn luôn cao quý. Có những lỗi cài đặ
 Trước khi thực thi một đoạn code, mình cố nói được đầu vào, đầu ra và ít nhất một trường hợp nó có thể hỏng. Dự đoán sai cũng tốt; lúc ấy mình có thứ để so sánh. AI có thể gợi ý từ khóa, phản biện một phương án hoặc giải thích khái niệm theo cách khác. Quyết định cuối cùng phải đi cùng lý do mà mình tự bảo vệ được. Với một pipeline phức tạp, mình luôn muốn có baseline đủ đơn giản để hiểu hết. Nó có thể kém hơn, nhưng giúp biết phần phức tạp mới thực sự đóng góp gì. Nếu đóng AI lại và mình không giải thích được project cho một người khác, mình chưa thật sự sở hữu kiến thức đó. Một log chỉ có kết quả tốt thường là một câu chuyện đã được chỉnh sửa quá mức. Những giả thuyết sai cho biết mình đã học ở đâu. Mình không muốn biến câu chuyện này thành lời kêu gọi bỏ AI. Mình học ngành Trí tuệ nhân tạo, xây sản phẩm với AI và muốn nghiên cứu chính công nghệ này. Sẽ khá buồn cười nếu kết luận của mình chỉ là “đừng dùng nó”. Câu hỏi đúng hơn là: phần nào trong quá trình này mình không được phép giao đi?
 
 Với mình, đó là việc đặt câu hỏi, xác định bằng chứng và chịu trách nhiệm cho quyết định. AI có thể rút ngắn khoảng cách đến một câu trả lời. Nó không nên rút ngắn khoảng cách đến mức mình bỏ qua sự hiểu biết. Ngày trước, mình sợ một project chạy chậm. Bây giờ mình sợ hơn một project chạy được nhưng người viết ra nó không biết tại sao. Đấy có lẽ là lỗi khó debug nhất mà AI từng giúp mình tạo ra.
+
+
+---
+
+*Nghiên cứu về kỹ thuật Prompt Engineering và tối ưu hóa chỉ dẫn mô hình ngôn ngữ được lưu trữ tại [GitHub: promptea-prompt-optimization](https://github.com/nhdnhut/promptea-prompt-optimization).*

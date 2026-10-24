@@ -104,3 +104,11 @@ Project from scratch rất dễ tạo ảo tưởng “mình hiểu hết rồi�
 3. **Theo dõi phân phối trọng số:** Không chỉ nhìn vào scalar loss; cần xem tensor gradient có bị suy biến hoặc phát nổ không.
 
 Giờ đây, mình không còn nghĩ dùng thành thạo một API nghĩa là đã thấu hiểu mô hình. Mình cũng không nghĩ phải tự viết mọi thứ từ đầu mới là học nghiêm túc. Điều cốt lõi là ta biết **lớp trừu tượng (abstraction) đang ẩn giấu điều gì, và khi nào cần mở chiếc hộp ra để tối ưu hóa**.
+
+
+---
+
+### Mã nguồn mở & Kiểm thực sai phân hữu hạn
+
+Toàn bộ mã nguồn NumPy thuần, lan truyền ngược giải tích và kiểm thử finite-difference gradient check ($\lt 10^{-6}$) được phát hành mở tại:
+- Kho lưu trữ chính thức: [GitHub: neural-network-from-scratch](https://github.com/nhdnhut/neural-network-from-scratch)
