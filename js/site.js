@@ -242,7 +242,7 @@
             <h3>Academic Inquiry & Collaboration</h3>
             <p class="prose">If you have scientific questions, feedback, or would like to discuss collaboration on this research direction, please reach out via email.</p>
             <div class="inline-links">
-              <a href="mailto:${escapeHTML(config.site?.email || 'penciltalk0910@gmail.com')}">Discuss via Email ${arrow}</a>
+              <a href="mailto:${escapeHTML(config.site?.email || '26521522@gm.uit.edu.vn')}">Discuss via Email ${arrow}</a>
               ${work.codeUrl ? `<a href="${escapeHTML(safeHref(work.codeUrl))}" target="_blank" rel="noreferrer">Source Repository ${arrow}</a>` : ''}
             </div>
           </section>

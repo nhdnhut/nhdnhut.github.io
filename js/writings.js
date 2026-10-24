@@ -1949,7 +1949,7 @@
       end.setAttribute('role', 'contentinfo');
       end.append(element('span', '', labels.end));
       const email = element('a', '', `${labels.discuss} ↗`);
-      email.href = `mailto:${config.site?.email || 'penciltalk0910@gmail.com'}`;
+      email.href = `mailto:${config.site?.email || '26521522@gm.uit.edu.vn'}`;
       end.append(email);
       mount.append(end);
 

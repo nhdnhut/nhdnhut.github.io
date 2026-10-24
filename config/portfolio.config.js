@@ -6,7 +6,7 @@ window.PORTFOLIO_CONFIG = {
     "footerRole": "Artificial Intelligence · UIT, VNU-HCM",
     "location": "Vietnam · GMT+7",
     "copyrightYear": "2026",
-    "email": "penciltalk0910@gmail.com",
+    "email": "26521522@gm.uit.edu.vn",
     "profileImage": "assets/profile.jpg",
     "webIcon": "assets/icon.png",
     "resume": "assets/nguyenhuynhdangnhut_cv.pdf",
@@ -138,7 +138,7 @@ window.PORTFOLIO_CONFIG = {
       "reachLinks": [
         {
           "label": "Email",
-          "href": "mailto:penciltalk0910@gmail.com"
+          "href": "mailto:26521522@gm.uit.edu.vn"
         },
         {
           "label": "GitHub",
@@ -290,7 +290,7 @@ window.PORTFOLIO_CONFIG = {
       "reachLinks": [
         {
           "label": "Email me",
-          "href": "mailto:penciltalk0910@gmail.com"
+          "href": "mailto:26521522@gm.uit.edu.vn"
         }
       ]
     },
@@ -489,7 +489,7 @@ window.PORTFOLIO_CONFIG = {
       "reachLinks": [
         {
           "label": "Start a conversation",
-          "href": "mailto:penciltalk0910@gmail.com"
+          "href": "mailto:26521522@gm.uit.edu.vn"
         },
         {
           "label": "GitHub",
@@ -638,7 +638,7 @@ window.PORTFOLIO_CONFIG = {
       "reachLinks": [
         {
           "label": "Build with me",
-          "href": "mailto:penciltalk0910@gmail.com"
+          "href": "mailto:26521522@gm.uit.edu.vn"
         }
       ]
     },
@@ -885,7 +885,7 @@ window.PORTFOLIO_CONFIG = {
       "reachLinks": [
         {
           "label": "Start a conversation",
-          "href": "mailto:penciltalk0910@gmail.com"
+          "href": "mailto:26521522@gm.uit.edu.vn"
         }
       ]
     }
