@@ -11,3 +11,13 @@ Inference và training vì thế là hai thế giới rất khác. Một mô hì
 Đây cũng là nơi vật lý và tư duy thí nghiệm quay lại. Một con số tốt không có ý nghĩa nếu mình thay ba biến cùng lúc. Một mô hình nhỏ hơn không hẳn hiệu quả hơn nếu latency tăng mạnh. Một phương pháp “tiết kiệm” cho GPU có thể đẩy gánh nặng sang CPU và I/O. Tối ưu không phải làm cho một con số nhỏ đi. Tối ưu là quyết định mình sẵn sàng trả bằng thứ gì. Mình đang tập một quy trình đơn giản hơn: bắt đầu với mô hình đủ nhỏ để chạy nhiều lần; đặt một baseline có thể tái lập; profile thời gian và bộ nhớ trước khi tối ưu; chỉ thay một nhóm yếu tố trong mỗi thí nghiệm; lưu cấu hình, seed, phiên bản thư viện và kết quả thất bại; dùng thí nghiệm lớn chỉ để kiểm tra giả thuyết đã được thu hẹp. Điều này nghe chậm, nhưng thường nhanh hơn việc đốt cả phiên Colab cho một run mà cuối cùng không biết mình vừa chứng minh điều gì. Tài nguyên ít cũng buộc mình quan tâm đến chất lượng câu hỏi. Nếu chỉ có thể chạy năm thí nghiệm, mình không thể dùng bốn thí nghiệm đầu để tìm xem project đang hỏi gì.
 
 Compute vẫn quan trọng. Có những câu hỏi không thể trả lời nghiêm túc với một GPU 16GB. Không nên biến thiếu tài nguyên thành một câu chuyện đạo đức rằng người giỏi thì không cần phần cứng. Nhưng mình cũng không muốn chờ đến ngày có một cụm GPU mới bắt đầu nghiên cứu. Nhiều vấn đề về hiệu quả có thể được học từ mô hình nhỏ, benchmark nhỏ và measurement đủ cẩn thận. Nếu một ý tưởng chỉ có giá trị khi mình đủ tiền chạy nó, có lẽ mình nên hiểu rõ điều đó càng sớm càng tốt. Mục tiêu của mình không phải chứng minh 8GB RAM là đủ cho mọi thứ. Mục tiêu là đến lúc có nhiều tài nguyên hơn, mình sẽ không dùng chúng để che một thí nghiệm được thiết kế kém. Chiếc laptop 8GB đôi khi rất chậm. Nhưng nó đã dạy mình một câu hỏi khá nhanh: **Byte bộ nhớ tiếp theo thực sự mua được điều gì?**
+
+
+---
+
+### Các triển khai thực nghiệm mã nguồn mở liên quan
+
+Các công trình nghiên cứu và chuẩn đo lường (benchmarks) bắt nguồn từ câu hỏi tối ưu hóa tài nguyên này:
+- **T4 Speculative Decoding Acceleration**: Tăng tốc suy luận mô hình Qwen trên GPU T4 thông qua BitsAndBytes NF4/INT8 và xác minh draft tokens. [GitHub: t4-speculative-decoding](https://github.com/nhdnhut/t4-speculative-decoding)
+- **Neural Compression CPU Benchmarks**: Chuẩn đo lường thực nghiệm Post-Training Quantization (INT8), Structured L1 Pruning và Low-Rank SVD trên CPU. [GitHub: neural-compression-cpu-benchmarks](https://github.com/nhdnhut/neural-compression-cpu-benchmarks)
+- **WARI Adaptive Memory Scheduling**: Cơ chế phân phối Working-set Layer-Granule Residual CPU Inference (WARI-L) cho suy luận cục bộ. [GitHub: wari-adaptive-inference](https://github.com/nhdnhut/wari-adaptive-inference)

@@ -13,3 +13,8 @@ Mình muốn giao diện có cả tiếng Việt và tiếng Anh vì đó là c�
 Không mô hình nào hoàn toàn đúng. Công việc của người thiết kế không phải tìm một ontology hoàn hảo cho tri thức nhân loại. Nó là chọn một mô hình đủ hữu ích cho nhóm người và hành vi mình muốn phục vụ. Nếu làm lại từ đầu, mình sẽ phỏng vấn “Nhựt của tuần bận nhất” trước “Nhựt của ngày có động lực nhất”. Mình sẽ prototype luồng quay lại sau khi bỏ dở, vì đó là tình huống thật hơn việc hoàn thành đúng kế hoạch. Và mình sẽ để graph nằm sau giao diện, chỉ hiện ra khi nó giúp quyết định bước tiếp theo. Mình vẫn thích tên LifeOS, với một điều kiện. Hệ điều hành tốt quản lý tài nguyên và giúp chương trình hoạt động. Nó không quyết định người dùng phải sống thế nào. Một nền tảng học tập cũng vậy: nó nên làm trạng thái rõ hơn, giảm ma sát và giữ ngữ cảnh, chứ không biến cuộc sống thành chuỗi thanh tiến độ. Dailynox còn là một project đang phát triển, không phải câu trả lời hoàn chỉnh. Nhưng nó đã cho mình một câu hỏi đáng giữ: Làm sao phần mềm có thể tôn trọng việc học như một quá trình lộn xộn, mà vẫn giúp người học tìm thấy bước tiếp theo? Nếu trả lời được câu đó, có lẽ mình chưa xây một hệ điều hành cho cuộc sống.
 
 Nhưng ít nhất mình đã xây được một nơi để không đánh mất bài học giữa đường.
+
+
+---
+
+*Mã nguồn và kiến trúc UNESCO MIL Learning OS được phát hành tại [GitHub: dailynox-learning-os](https://github.com/nhdnhut/dailynox-learning-os).*

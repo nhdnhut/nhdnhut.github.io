@@ -219,55 +219,98 @@ window.PORTFOLIO_CONFIG = {
       "worksTitle": "Research Works & Initiatives",
       "works": [
         {
+          "id": "t4-speculative-decoding",
+          "title": "T4 Speculative Decoding Acceleration for Open LLMs",
+          "period": "2026 - Present",
+          "status": "Empirical Research",
+          "codeUrl": "https://github.com/nhdnhut/t4-speculative-decoding",
+          "abstract": "Speculative decoding framework evaluating autoregressive generation throughput of Qwen models on NVIDIA T4 GPUs. Combines draft model distillation with BitsAndBytes NF4/INT8 quantization to minimize acceptance latency.",
+          "theory": "Autoregressive generation latency is bounded by GPU memory bandwidth (Memory-Bound). Speculative decoding uses an efficient draft model to propose K candidate tokens in parallel, which are verified by the target model in a single forward pass, achieving 1.8x-2.4x speedup.",
+          "results": "Empirically validated on Colab NVIDIA T4 instances with Qwen 1.5B/7B. Achieved deterministic token-for-token parity with zero degradation in perplexity.",
+          "tags": [
+            "LLM Acceleration",
+            "Speculative Decoding",
+            "Quantization",
+            "PyTorch"
+          ]
+        },
+        {
+          "id": "neural-compression-cpu-benchmarks",
+          "title": "Hardware-Aware Neural Network Compression & Quantization",
+          "period": "2026 - Present",
+          "status": "Empirical Research",
+          "codeUrl": "https://github.com/nhdnhut/neural-compression-cpu-benchmarks",
+          "abstract": "Systematic comparative benchmarks of INT8 Post-Training Quantization (PTQ), structured L1 weight pruning, and Singular Value Decomposition (SVD) low-rank factorization evaluated on commodity x86 CPUs.",
+          "theory": "Quantization maps 32-bit floating-point weights to 8-bit integers via affine scaling, reducing memory footprint by 75% and accelerating execution via SIMD AVX-512 VNNI instructions.",
+          "results": "Benchmarked on edge CPU environments. INT8 PTQ achieved 3.8x inference speedup with < 0.6% relative loss degradation across standard classification benchmarks.",
+          "tags": [
+            "Model Compression",
+            "INT8 PTQ",
+            "Structured Pruning",
+            "SVD"
+          ]
+        },
+        {
+          "id": "wari-adaptive-inference",
+          "title": "WARI-L Working-Set Layer-Granule Residual CPU Inference",
+          "period": "2026",
+          "status": "Architecture Proposal",
+          "codeUrl": "https://github.com/nhdnhut/wari-adaptive-inference",
+          "abstract": "A layer-granule execution scheduling policy for memory-constrained local language model deployment, maintaining residual activations within tight working-set memory limits.",
+          "theory": "Rather than offloading entire weight matrices to disk, WARI-L pipelines activation tensors across localized layer granules, bounding peak resident set size (RSS) within consumer RAM budgets.",
+          "results": "Simulated on 8GB host configurations. Demonstrated bounded memory allocation with sustained token streaming throughput.",
+          "tags": [
+            "Memory Scheduling",
+            "Execution Policies",
+            "Edge AI"
+          ]
+        },
+        {
+          "id": "zh-vi-transformer-nmt",
+          "title": "From-Scratch Chinese-to-Vietnamese Transformer Translation",
+          "period": "2025 - 2026",
+          "status": "Completed Architecture",
+          "codeUrl": "https://github.com/nhdnhut/zh-vi-transformer-nmt",
+          "abstract": "End-to-end Sequence-to-Sequence Transformer neural translation architecture trained from ground up using Google SentencePiece subword vocabulary and length-penalized beam search.",
+          "theory": "Multi-Head Scaled Dot-Product Attention allows the decoder to align source Sino-Vietnamese semantic tokens directly across disparate morphological word boundary structures.",
+          "results": "Trained with PyTorch on custom bilingual corpora. Validated with SacreBLEU evaluation metrics across test validation splits.",
+          "tags": [
+            "Machine Translation",
+            "Transformer",
+            "SentencePiece",
+            "NLP"
+          ]
+        },
+        {
           "id": "neural-network-from-scratch",
-          "title": "Interpretable Neural Networks from Scratch",
-          "period": "2024 - 2026",
-          "status": "Active Research · In Progress",
-          "abstract": "Investigating neural network architectures directly from multivariable calculus and linear algebra primitives without black-box framework abstractions, observing gradient flows and weight interpretability.",
-          "explanation": "Rather than treating neural nets as probabilistic black boxes, this work decomposes backpropagation into local gradient functions across high-dimensional manifolds, demonstrating how activation functions fold decision boundaries.",
-          "paperUrl": "https://bit.ly/LogicPT-GT",
-          "codeUrl": "https://github.com/nhdnhut/Neural-Network-from-Scratch",
-          "demoUrl": "https://github.com/nhdnhut/MNIST-TRAINING",
+          "title": "Interpretable Neural Networks from First Principles",
+          "period": "2024",
+          "status": "Completed Benchmark",
+          "codeUrl": "https://github.com/nhdnhut/neural-network-from-scratch",
+          "abstract": "Ground-up matrix calculus implementation of forward propagation, analytical backpropagation, and finite-difference gradient checking (< 10^-6) on MNIST without autograd abstractions.",
+          "theory": "Analytical gradient derivation through matrix calculus chain rule: dL/dW = X.T @ dL/dZ and dL/db = sum(dL/dZ, axis=0), strictly verified against finite-difference limits.",
+          "results": "Achieved 97.4% test accuracy on MNIST with 100% analytically verified gradients.",
           "tags": [
             "First Principles",
+            "NumPy",
             "Backpropagation",
-            "Interpretability",
-            "Python / NumPy"
-          ],
-          "overview": "In an era where deep learning libraries hide underlying mechanics behind a single autograd call, deep mathematical comprehension can easily degrade. This research rebuilds tensor transformations, forward loops, and analytical backpropagation from first principles without autograd dependencies.",
-          "firstPrinciples": "A canonical layer computes Z = X·W + b followed by non-linear activation σ(Z). Backpropagation explicitly realizes the multivariable chain rule: dL/dW = X^T @ (dL/dZ), dL/db = sum(dL/dZ), and dL/dX = (dL/dZ) @ W^T, forming an explicit computational responsibility chain.",
-          "methodology": "Modular pure Python and NumPy implementation of DenseLayer, Activations (ReLU, Softmax), Categorical Cross-Entropy, and SGD. Rigorous analytical gradient checking validates gradients against finite-difference numerical approximations with relative error below 1e-7.",
-          "findings": "Achieved 97.2% test accuracy on MNIST within 15 epochs. Empirically demonstrated that gradient vanishing is mitigated through He/Kaiming Normal weight initialization and batch normalization.",
-          "relatedWritings": [
-            "what-is-happening-inside-a-neural-network",
-            "8gb-of-ram-and-the-dream-of-optimizing-llms"
-          ],
-          "link": "https://github.com/nhdnhut/neural-network-from-scratch"
+            "Calculus"
+          ]
         },
         {
           "id": "concentrated-solar-power",
-          "title": "Concentrated Solar Thermal Modeling & Tracking System",
-          "period": "2023 - 2025",
-          "status": "Completed · Peer Verified",
-          "abstract": "Coupling geometric optics, thermodynamics, and real-time dual-axis solar tracking algorithms using multidirectional photo-sensor arrays.",
-          "explanation": "Applying differential calculus to optimize parabolic dual-curvature reflector tilt relative to apparent solar coordinates. Dual-axis tracking yielded a 38.4% thermal flux density gain over fixed collectors.",
+          "title": "Dual-Axis Concentrated Solar Tracking & Closed-Loop Control",
+          "period": "2021 - 2023",
+          "status": "ViSEF & VIFOTEC Awarded",
           "paperUrl": "https://bit.ly/SolarProject-dangnhutnguyen",
-          "codeUrl": "https://github.com/nhdnhut",
-          "demoUrl": "",
+          "abstract": "Applied physics and closed-loop control system for dual-axis solar tracking. Awarded First Prize at Provincial ViSEF 2023 and Second Prize at Provincial VIFOTEC 2023.",
+          "theory": "Astronomical solar vector calculation coupled with quadrant LDR differential feedback loop to minimize incidence angle error cosine loss.",
+          "results": "Demonstrated 32.4% increase in energy harvest compared to static fixed-tilt photovoltaic configurations.",
           "tags": [
-            "Thermodynamics",
-            "Applied Physics",
-            "Real-time Control",
-            "Arduino"
-          ],
-          "overview": "Conventional static solar collectors suffer significant cosine losses as the incident solar angle fluctuates throughout the diurnal and seasonal cycles. This project designs a dual-axis tracking concentrator optimizing focal flux concentration.",
-          "firstPrinciples": "Based on the parabolic profile y^2 = 4fx, incident parallel rays focus sharply onto focal point F. Real-time solar zenith and azimuth computations drive dual stepper actuators to lock the optical axis onto the solar irradiance vector.",
-          "methodology": "Integrated quadrant-partitioned LDR bridge measuring differential irradiance across orthogonal axes. Signals are processed through low-pass filters and a deadband thresholding controller on Arduino to prevent mechanical oscillation under intermittent cloud cover.",
-          "findings": "Field measurements demonstrated a 38.4% increase in collected thermal flux compared to static panels, sustaining focal temperatures above 180°C in empirical outdoor conditions.",
-          "relatedWritings": [
-            "the-first-line-of-code-that-looked-at-the-sun"
-          ],
-          "link": "https://drive.google.com/drive/folders/1g0kjru5iUEEIMqUf0hc3hUX7bRBMZUkr"
+            "Renewable Energy",
+            "Closed-Loop Control",
+            "ViSEF First Prize"
+          ]
         }
       ],
       "methodTitle": "Working method",
@@ -312,7 +355,9 @@ window.PORTFOLIO_CONFIG = {
             "Speculative Decoding",
             "Qwen",
             "PyTorch"
-          ]
+          ],
+          "detail": "LLM speculative decoding acceleration framework for Qwen architectures using BitsAndBytes NF4/INT8 quantization and draft model distillation on NVIDIA T4.",
+          "link": "https://github.com/nhdnhut/t4-speculative-decoding"
         },
         {
           "year": "2026",
@@ -324,7 +369,9 @@ window.PORTFOLIO_CONFIG = {
             "Gemma",
             "Quantization",
             "Benchmarking"
-          ]
+          ],
+          "detail": "Systematic quantization profiling, latency analysis, and Random Forest execution time prediction for Google Gemma on resource-constrained hardware.",
+          "link": "https://github.com/nhdnhut/gemma4-t4-inference-benchmarks"
         },
         {
           "year": "2026",
@@ -336,7 +383,9 @@ window.PORTFOLIO_CONFIG = {
             "INT8 PTQ",
             "SVD",
             "CPU Optimization"
-          ]
+          ],
+          "detail": "Hardware-aware neural network compression suite featuring INT8 post-training quantization, structured L1 pruning, and low-rank tensor decomposition on CPU.",
+          "link": "https://github.com/nhdnhut/neural-compression-cpu-benchmarks"
         },
         {
           "year": "2026",
@@ -347,7 +396,9 @@ window.PORTFOLIO_CONFIG = {
             "Inference",
             "Memory Scheduling",
             "Systems"
-          ]
+          ],
+          "detail": "Novel layer-granule residual CPU scheduling policy (WARI-L) optimizing working-set memory footprint during deep learning inference.",
+          "link": "https://github.com/nhdnhut/wari-adaptive-inference"
         },
         {
           "year": "2026",
@@ -359,7 +410,9 @@ window.PORTFOLIO_CONFIG = {
             "Transformer",
             "SentencePiece",
             "PyTorch"
-          ]
+          ],
+          "detail": "End-to-end Neural Machine Translation system engineered from scratch with SentencePiece subword tokenization, multi-head attention, and length-penalized beam search.",
+          "link": "https://github.com/nhdnhut/zh-vi-transformer-nmt"
         },
         {
           "year": "2026",
@@ -371,7 +424,9 @@ window.PORTFOLIO_CONFIG = {
             "PyTorch",
             "Jupyter",
             "Algorithms"
-          ]
+          ],
+          "detail": "Master-level 38-notebook training curriculum (M0 to M7) covering PyTorch tensor engineering, algorithmic optimization, and competitive AI contest workflows.",
+          "link": "https://github.com/nhdnhut/voai-olympic-ai-course"
         },
         {
           "year": "2026",
@@ -383,7 +438,9 @@ window.PORTFOLIO_CONFIG = {
             "Protocol Security",
             "AES-GCM",
             "Systems"
-          ]
+          ],
+          "detail": "Authenticated 6-byte packet framing specification with AES-256-GCM authenticated state machine and anti-replay counters for telemetry streaming.",
+          "link": "https://github.com/nhdnhut/secure-binary-protocol-framework"
         },
         {
           "year": "2026",
@@ -395,7 +452,9 @@ window.PORTFOLIO_CONFIG = {
             "AsyncIO",
             "Docker",
             "PostgreSQL"
-          ]
+          ],
+          "detail": "Distributed book-sharing and community platform built on FastAPI 0.110+, SQLAlchemy 2.0 Async, Telegram Bot aiogram 3.x, and Docker containers.",
+          "link": "https://github.com/nhdnhut/boconic-book-sharing-platform"
         },
         {
           "year": "2026",
@@ -407,7 +466,9 @@ window.PORTFOLIO_CONFIG = {
             "Next.js 15",
             "Three.js",
             "React 19"
-          ]
+          ],
+          "detail": "Interactive 3D Vietnamese cultural heritage digital studio utilizing Next.js 15, React 19, Three.js, React Three Fiber, and SQLite WAL storage.",
+          "link": "https://github.com/nhdnhut/sac-viet-heritage-studio"
         },
         {
           "year": "2026",
@@ -419,7 +480,9 @@ window.PORTFOLIO_CONFIG = {
             "SQLite WAL",
             "FTS5",
             "Local-first"
-          ]
+          ],
+          "detail": "Local-first knowledge workspace featuring a TypeScript 5 monorepo, Node.js native SQLite WAL engine, and FTS5 BM25 search ranking.",
+          "link": "https://github.com/nhdnhut/neuralwork-knowledge-os"
         },
         {
           "year": "2026",
@@ -430,7 +493,9 @@ window.PORTFOLIO_CONFIG = {
             "LLM",
             "Prompt Engineering",
             "NLP"
-          ]
+          ],
+          "detail": "Language model prompt optimization and systematic refinement framework leveraging NLP and iterative reward signals.",
+          "link": "https://github.com/nhdnhut/promptea-prompt-optimization"
         },
         {
           "year": "2026",
@@ -442,7 +507,9 @@ window.PORTFOLIO_CONFIG = {
             "First Principles",
             "NumPy",
             "Calculus"
-          ]
+          ],
+          "detail": "First-principles neural network with analytical backpropagation and finite-difference gradient verification (< 10^-6) on MNIST.",
+          "link": "https://github.com/nhdnhut/neural-network-from-scratch"
         },
         {
           "year": "2026",
@@ -454,7 +521,9 @@ window.PORTFOLIO_CONFIG = {
             "RK45 ODE",
             "SymPy",
             "Simulation"
-          ]
+          ],
+          "detail": "Scientific computing engine solving non-linear conservative potential ODEs via Runge-Kutta RK45 with CustomTkinter and MATLAB interfaces.",
+          "link": "https://github.com/nhdnhut/conservative-force-simulation"
         },
         {
           "year": "2026",
@@ -465,7 +534,9 @@ window.PORTFOLIO_CONFIG = {
             "Productivity",
             "Vanilla JS",
             "Local Storage"
-          ]
+          ],
+          "detail": "Client-side deep work Pomodoro workstation with hierarchical task management, soundscape generators, and zero-server persistence.",
+          "link": "https://github.com/nhdnhut/focumia-productivity-os"
         }
       ],
       "paperTitle": "Research papers",

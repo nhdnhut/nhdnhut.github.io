@@ -102,3 +102,8 @@ The project went on to earn **First Prize at Provincial ViSEF** and **Second Pri
 - Cause deliberate, physical movement toward the sun.
 
 Before that project, programming lived inside a rectangular screen. Afterward, that barrier collapsed. Code became a primary instrument for building real-world systems.
+
+
+---
+
+*Technical documentation and project dossier awarded ViSEF / VIFOTEC are archived at [Solar Tracking Project Technical Report](https://bit.ly/SolarProject-dangnhutnguyen).*

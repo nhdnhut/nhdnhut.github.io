@@ -102,3 +102,8 @@ Bước thứ 5 chính là phần mang tính quyết định nhất. Không có 
 - Tạo nên một hành động vật lý chuẩn xác đón ánh bình minh.
 
 Trước dự án này, lập trình với mình là những thuật toán đóng khung trong màn hình máy tính. Sau dự án, ranh giới đó vĩnh viễn biến mất. AI và code trở thành công cụ để kiến tạo những hệ thống hữu ích cho cuộc sống.
+
+
+---
+
+*Tài liệu nguyên lý và hồ sơ dự án đạt giải ViSEF / VIFOTEC được lưu trữ tại [Báo cáo Kỹ thuật Dự án Năng lượng Mặt trời](https://bit.ly/SolarProject-dangnhutnguyen).*

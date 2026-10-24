@@ -11,3 +11,8 @@ So sánh này không hoàn hảo. Nhưng nó cho mình một trực giác để 
 Hướng đi này cần toán, code, hệ thống máy tính và rất nhiều kỹ năng mình chưa có. Nó cũng cần khả năng nhìn một mô hình mà không nhầm nó với thế giới. Vật lý đã cho mình điểm xuất phát tốt cho việc đó. Mình không nghĩ học liên ngành có nghĩa là đặt hai nhãn cạnh nhau rồi chờ ý tưởng xuất hiện. Kiến thức chỉ thật sự giao nhau khi một cách suy nghĩ ở lĩnh vực này giúp mình đặt câu hỏi tốt hơn ở lĩnh vực kia. Với mình, câu hỏi vật lý thường bắt đầu bằng: hệ thống này đang chịu những tác động nào? Câu hỏi AI tương ứng có thể là: kết quả này được tạo bởi dữ liệu, kiến trúc, mục tiêu tối ưu và quy trình đánh giá như thế nào? Người ta thường thích những câu chuyện có cú rẽ rõ: từng là học sinh Vật lý, bây giờ là sinh viên AI. Cách kể đó gọn, nhưng không đúng lắm. Mình vẫn là người từng ngồi rất lâu với một bài cơ học, từng làm thiết bị bám nguồn sáng và vẫn thấy đẹp khi một mô hình giải thích được nhiều hiện tượng bằng ít giả định. AI không thay thế phần đó. Nó cho mình một tập câu hỏi mới. Giải Nhì Vật lý không phải bằng chứng rằng mình đã chọn nhầm ngành.
 
 Nó là lời nhắc rằng trước khi học cách làm cho máy dự đoán, mình đã học cách hỏi thế giới vì sao.
+
+
+---
+
+*Mô phỏng cơ học phi tuyến và phương trình vi phân bảo toàn năng lượng RK45 được lưu trữ tại [GitHub: conservative-force-simulation](https://github.com/nhdnhut/conservative-force-simulation).*

@@ -255,7 +255,7 @@
 
   function renderProjects(page) {
     const projects = (page.items || []).map(item => `
-      <article><time>${escapeHTML(item.year)}</time><div><h3>${escapeHTML(item.title)}</h3><p>${escapeHTML(item.detail)}</p><small>${escapeHTML((item.tags || []).join(' · '))}</small>${item.link ? `<a href="${escapeHTML(safeHref(item.link))}" target="_blank" rel="noreferrer">${escapeHTML(ui.viewProject || 'View project')} ${arrow}</a>` : `<em>${escapeHTML(ui.documentationInProgress || 'Documentation in progress')}</em>`}</div></article>`).join('');
+      <article><time>${escapeHTML(item.year)}</time><div><h3>${escapeHTML(item.title)}</h3><p>${escapeHTML(item.detail || item.summary || '')}</p><small>${escapeHTML((item.tags || []).join(' · '))}</small>${(item.link || item.href) ? `<a href="${escapeHTML(safeHref(item.link || item.href))}" target="_blank" rel="noreferrer">${escapeHTML(ui.viewProject || 'View project')} ${arrow}</a>` : `<em>${escapeHTML(ui.documentationInProgress || 'Documentation in progress')}</em>`}</div></article>`).join('');
     const papers = (page.papers || []).map((item, index) => `
       <a href="${escapeHTML(safeHref(item.link))}" target="_blank" rel="noreferrer"><span>${String(index + 1).padStart(2, '0')}</span><div><h3>${escapeHTML(item.title)}</h3><p>${escapeHTML(item.detail)} · ${escapeHTML(item.language)}</p></div>${arrow}</a>`).join('');
     return `${renderPageIntro(page)}
